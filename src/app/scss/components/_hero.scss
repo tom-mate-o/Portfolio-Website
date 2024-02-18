@@ -1,0 +1,99 @@
+@use '../util/' as u;
+
+.hero {
+  &__bg-image {
+    width: 100%;
+    height: auto;
+    padding-block-start: 25px;
+    padding-inline-start: 20px;
+    background-image: url('../img/hero_bg.jpg');
+    background-size: cover;
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto;
+
+    @include u.breakpoint('medium') {
+      grid-template-rows: 1fr 2fr;
+      padding-block-start: 30px;
+      padding-inline-start: 30px;
+      max-height: u.rem(345);
+    }
+  }
+  &__title {
+    grid-column: 1/3;
+    grid-row: 1/2;
+    color: var(--text-color-dark);
+
+    @include u.breakpoint('medium') {
+      grid-column: 1/2;
+    }
+  }
+
+  &__left {
+    grid-column: 1/2;
+    grid-row: 2/3;
+    height: 100%;
+  }
+
+  &__text {
+    color: var(--text-color-dark);
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  &__content {
+    max-width: 350px;
+    margin-block-start: u.rem(25);
+    font-size: u.rem(20);
+    font-size: clamp(u.rem(20), 1.14rem + 0.47vw, u.rem(25));
+
+    @include u.breakpoint('medium') {
+      margin-block-start: u.rem(0);
+      max-width: 350px;
+    }
+  }
+
+  &__buttons {
+    display: flex;
+    flex-direction: column;
+    gap: u.rem(10) u.rem(20);
+    margin-block-end: u.rem(25);
+
+    @include u.breakpoint('medium') {
+      flex-direction: row;
+      margin-block-end: u.rem(50);
+    }
+  }
+
+  &__right {
+    grid-column: 2/3;
+    grid-row: 2/3;
+    display: grid;
+    justify-items: end;
+    align-items: end;
+    background-image: url('../img/tom_stamp_background_vector.svg');
+    background-size: clamp(
+        u.rem(190),
+        10.818661971830986rem + 4.507042253521126vw,
+        u.rem(238)
+      )
+      auto;
+    background-position: right bottom;
+    background-repeat: no-repeat;
+
+    @include u.breakpoint('medium') {
+      grid-row: 1/3;
+    }
+  }
+
+  &__image {
+    width: clamp(
+      11.475625rem,
+      10.454718309859157rem + 4.355868544600938vw,
+      14.375rem
+    );
+    height: auto;
+  }
+}

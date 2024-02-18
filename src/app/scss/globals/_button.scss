@@ -1,0 +1,47 @@
+@use '../util' as u;
+
+.button {
+  display: inline-block;
+  font-size: u.rem(15);
+  line-height: 0.7;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  text-align: center;
+  padding: u.rem(14); // top+bottom 14px
+  border-radius: u.rem(24);
+  height: u.rem(40);
+  width: u.rem(150);
+
+  @include u.breakpoint('medium') {
+    height: u.rem(45);
+    width: u.rem(165);
+    font-size: u.rem(20);
+    line-height: 0.75;
+  }
+
+  transition-property: background-color, border, color; //smooth transition on hover
+  transition-duration: 0.5s;
+  transition-timing-function: ease-in-out;
+
+  &.primary {
+    background-color: var(--primary-button-bg);
+    color: var(--text-color-light);
+
+    &:hover {
+      background-color: var(--primary-button-bg-hover);
+    }
+  }
+
+  &.secondary {
+    padding: u.rem(12);
+    background-color: var(--secondary-button-bg);
+    border: 2px solid var(--secondary-button-border);
+    color: var(--secondary-button-text-color);
+
+    &:hover {
+      background-color: var(--secondary-button-bg-hover);
+      border: 2px solid var(--secondary-button-border-hover);
+      color: var(--secondary-button-text-color-hover);
+    }
+  }
+}
