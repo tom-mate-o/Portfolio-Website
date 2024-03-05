@@ -13,8 +13,16 @@ h1 {
   font-size: clamp(u.rem(25), 1.45rem + 0.47vw, u.rem(30));
 }
 
+h2 {
+}
+
+p {
+  font-size: u.rem(16);
+}
+
 a,
 a:visited,
 a:active {
+  line-height: 1;
   text-decoration: none;
 }

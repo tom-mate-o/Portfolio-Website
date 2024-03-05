@@ -18,6 +18,10 @@
     width: min(100% - u.rem(48), u.rem(800));
     margin-inline: auto;
     padding-block-start: u.rem(20);
+    min-height: 100vh;
+    position: relative;
+    padding-bottom: 130px; /* Höhe des Footers */
+    box-sizing: border-box;
 
     @include u.breakpoint-down(small) {
       width: 100%;

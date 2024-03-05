@@ -1,0 +1,51 @@
+@use '../util/' as u;
+
+.mobilenav {
+  background-color: var(--mobilemenu-bg);
+  z-index: 999;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  animation: fadeIn 0.5s ease-in-out forwards;
+
+  &__close {
+    margin-block-end: u.rem(30);
+    height: u.rem(40);
+    width: auto;
+    border: 2px solid var(--text-color-light);
+    border-radius: 50%;
+    padding: u.rem(5);
+  }
+
+  &.hidden {
+    display: none;
+  }
+
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+
+  &__links {
+    text-align: center;
+    font-size: u.rem(30);
+    display: flex;
+    flex-direction: column;
+    gap: u.rem(20);
+  }
+
+  a {
+    color: var(--text-color-light);
+  }
+}

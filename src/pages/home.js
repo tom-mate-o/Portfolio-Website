@@ -2,20 +2,22 @@ import React from 'react';
 import { useState, useEffect } from 'react';
 import tomBW from '../img/tom_stamp_BW_vector.svg';
 import tomColour from '../img/tom_colour.png';
+import { homedata } from '../app/data/homedata';
+import { BrowserRouter, Routes, Route, Link } from 'react-router-dom';
 
 export default function Home() {
   const [currentImage, setCurrentImage] = useState(tomBW);
 
   const sentences = [
+    'bring things to life with Java Script.',
     'code.',
     'build amazing things in React.',
     'be creative.',
     'build awesome layouts with SASS.',
     'learn new things.',
-    'bring things to life with Java Script.',
     'explore.',
     'design Mockups in Figma.',
-    'coffee.',
+    'drink coffee.',
     'manage Data with Mongoose.',
   ];
 
@@ -85,6 +87,25 @@ export default function Home() {
           />
         </div>
       </div>
+      {homedata.map((item) => (
+        <div className="homeitem__contentContainer">
+          <div className={`homeitem__${item.class}`} key={item.id}>
+            <div className="text">
+              <p>{item.text}</p>
+            </div>
+            <div
+              className="image"
+              style={{
+                backgroundImage: `linear-gradient(rgba(96, 92, 78, 0.5), rgba(96, 92, 78, 0.5)), url(${item.image})`,
+              }}
+            >
+              <Link className="homeitemButton" to={item.linkto}>
+                {item.name}
+              </Link>
+            </div>
+          </div>
+        </div>
+      ))}
     </div>
   );
 }

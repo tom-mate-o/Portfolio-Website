@@ -1,0 +1,23 @@
+@use '../util/' as u;
+
+.footer {
+  background-color: var(--dark-bg);
+  margin-block-start: u.rem(60);
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 100px;
+  padding-inline: u.rem(20);
+  padding-block-start: u.rem(10);
+  color: var(--content-text-color-light);
+  position: bottom;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-row: auto;
+
+  &__logo {
+    width: u.rem(70);
+    height: auto;
+    display: block;
+  }
+}
