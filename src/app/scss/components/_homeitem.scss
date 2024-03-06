@@ -10,18 +10,19 @@
 
   &__light {
     background-color: var(--light-bg);
-    height: u.rem(200);
+    height: auto;
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr auto;
 
     .text {
-      grid-column: 2/3;
-      grid-row: 1/2;
+      grid-column: 1/2;
+      grid-row: 2/3;
       display: flex;
       justify-content: center;
       align-items: center;
-      padding-inline: u.rem(40);
+      padding-inline: u.rem(20);
+      padding-block: u.rem(25);
 
       p {
         color: var(--content-text-color-dark);
@@ -32,6 +33,7 @@
     .image {
       grid-column: 1/2;
       grid-row: 1/2;
+      height: u.rem(150);
       background-size: cover;
       background-position: center;
       display: flex;
@@ -40,20 +42,21 @@
       transition: background-size 0.3s ease-in-out;
     }
 
-    .homeitemButton {
-      font-size: u.rem(30);
-      font-weight: 700;
-      line-height: 1;
-      color: var(--content-text-color-light);
-      border: 2px solid var(--content-text-color-light);
-      border-radius: u.rem(30);
-      padding-block: u.rem(10);
-      padding-inline: u.rem(30);
-      background-color: hsla(49, 11%, 30%, 0.2);
-      backdrop-filter: blur(3px);
-      transition-property: background-color, border, color; //smooth transition on hover
-      transition-duration: 0.5s;
-      transition-timing-function: ease-in-out;
+    @include u.breakpoint('medium') {
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 1fr;
+
+      .text {
+        grid-column: 2/3;
+        grid-row: 1/2;
+        padding-inline: u.rem(40);
+      }
+
+      .image {
+        grid-column: 1/2;
+        grid-row: 1/2;
+        height: u.rem(200);
+      }
     }
 
     .image:hover {
@@ -69,18 +72,19 @@
 
   &__dark {
     background-color: var(--dark-bg);
-    height: u.rem(200);
+    height: auto;
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr auto;
 
     .text {
       grid-column: 1/2;
-      grid-row: 1/2;
+      grid-row: 2/3;
       display: flex;
       justify-content: center;
       align-items: center;
-      padding-inline: u.rem(40);
+      padding-inline: u.rem(20);
+      padding-block: u.rem(25);
 
       p {
         color: var(--content-text-color-light);
@@ -89,29 +93,32 @@
     }
 
     .image {
-      grid-column: 2/3;
+      grid-column: 1/2;
       grid-row: 1/2;
+      height: u.rem(130);
       background-size: cover;
       background-position: center;
       display: flex;
       justify-content: center;
       align-items: center;
+      transition: background-size 0.3s ease-in-out;
     }
 
-    .homeitemButton {
-      font-size: u.rem(30);
-      font-weight: 700;
-      line-height: 1;
-      color: var(--content-text-color-light);
-      border: 2px solid var(--content-text-color-light);
-      border-radius: u.rem(30);
-      padding-block: u.rem(10);
-      padding-inline: u.rem(30);
-      background-color: hsla(49, 11%, 30%, 0.2);
-      backdrop-filter: blur(3px);
-      transition-property: background-color, border, color; //smooth transition on hover
-      transition-duration: 0.5s;
-      transition-timing-function: ease-in-out;
+    @include u.breakpoint('medium') {
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 1fr;
+
+      .text {
+        grid-column: 1/2;
+        grid-row: 1/2;
+        padding-inline: u.rem(40);
+      }
+
+      .image {
+        grid-column: 2/3;
+        grid-row: 1/2;
+        height: u.rem(200);
+      }
     }
 
     .image:hover {

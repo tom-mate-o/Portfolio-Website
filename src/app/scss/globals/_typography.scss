@@ -17,7 +17,10 @@ h2 {
 }
 
 p {
-  font-size: u.rem(16);
+  margin: 0;
+
+  font-size: u.rem(14);
+  font-size: clamp(u.rem(14), 0.84rem + 0.19vw, u.rem(16));
 }
 
 a,

@@ -28,7 +28,8 @@
     color: var(--text-color-light);
 
     &:hover {
-      background-color: var(--primary-button-bg-hover);}
+      background-color: var(--primary-button-bg-hover);
+    }
   }
 
   &.secondary {
@@ -43,4 +44,19 @@
       color: var(--secondary-button-text-color-hover);
     }
   }
+}
+
+.homeitemButton {
+  font-weight: 700;
+  line-height: 1;
+  color: var(--content-text-color-light);
+  border: 2px solid var(--content-text-color-light);
+  border-radius: u.rem(30);
+  padding-block: u.rem(10);
+  padding-inline: u.rem(30);
+  background-color: hsla(49, 11%, 30%, 0.2);
+  backdrop-filter: blur(3px);
+  transition-property: background-color, border, color; //smooth transition on hover
+  transition-duration: 0.5s;
+  transition-timing-function: ease-in-out;
 }

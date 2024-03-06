@@ -100,7 +100,7 @@ export default function Home() {
               }}
             >
               <Link className="homeitemButton" to={item.linkto}>
-                {item.name}
+                <h1>{item.name}</h1>
               </Link>
             </div>
           </div>
