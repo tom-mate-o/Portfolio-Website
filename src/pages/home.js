@@ -26,6 +26,10 @@ export default function Home() {
   const [reverse, setReverse] = useState(false);
 
   useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
+  useEffect(() => {
     if (subIndex === sentences[index].length + 1 && !reverse) {
       const timeout = setTimeout(() => {
         setReverse(true);
