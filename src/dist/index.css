@@ -1,0 +1,26 @@
+body {
+  background-color: var(--main-bg);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.visually-hidden {
+  position: absolute;
+  left: -10000px;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+.visually-hidden:focus {
+  left: 0;
+  width: auto;
+  height: auto;
+  background-color: #fff;
+  padding: 0.5rem;
+  border: 1px solid;
+}
+
+:root {
+  --main-bg: hsl(47, 97%, 48%);
+  --dark-color-opacity: rgba(0, 0, 0, 0.65);
+}/*# sourceMappingURL=index.css.map */
