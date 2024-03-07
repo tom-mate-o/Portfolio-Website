@@ -14,6 +14,11 @@ import Projects from './pages/projects';
 import Photos from './pages/photos';
 import Art from './pages/art';
 import Contact from './pages/contact';
+import Impressum from './pages/impressum';
+
+import { ReactComponent as Mastdodon } from './img/mastodon.svg';
+import { ReactComponent as GitHub } from './img/github.svg';
+import { ReactComponent as Extern } from './img/square-arrow-up-right-solid.svg';
 
 export default function App() {
   const [isMobileNavVisible, setMobileNavVisible] = useState(false);
@@ -44,10 +49,7 @@ export default function App() {
         <div class="wrapper topnav__wrapper">
           <div class="topnav__leftcolumn">
             <Link to="/" class="topnav__homelink hover-fade">
-              <Logo
-                class="topnav__logo"
-                style={{ fill: 'var(--dark-color-opacity)' }}
-              />
+              <Logo class="topnav__logo" />
             </Link>
           </div>
           <div class="topnav__rightcolumn">
@@ -156,30 +158,61 @@ export default function App() {
           <Route path="/photos" element={<Photos />} />
           <Route path="/art" element={<Art />} />
           <Route path="/contact" element={<Contact />} />
+          <Route path="/impressum" element={<Impressum />} />
         </Routes>
         <footer class="footer">
           <div class="footer__collumn1">
             <Link to="/" class="topnav__homelink hover-fade">
-              <Logo
-                class="footer__logo"
-                style={{ fill: 'var( --content-text-color-light)' }}
-              />
+              <Logo class="footer__logo" />
             </Link>
+            <p>©2024 Tom Kra</p>
           </div>
           <div class="footer__collumn2">
             <ul>
-              <li>GitHub</li>
-              <li>Mastdodon</li>
+              <li>
+                <a
+                  href="https://github.com/tom-mate-o"
+                  target="_blank"
+                  class="footer__link"
+                >
+                  <GitHub class="footer__socialicon" />
+                  GitHub
+                  <Extern class="footer__externicon" />
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://mastodon.art/@tomkra"
+                  target="_blank"
+                  class="footer__link"
+                >
+                  <Mastdodon class="footer__socialicon" />
+                  Mastodon
+                  <Extern class="footer__externicon" />
+                </a>
+              </li>
             </ul>
           </div>
           <div class="footer__collumn3">
             <ul>
-              <li>Contact</li>
+              <li>
+                <a href="" class="footer__link">
+                  <Link to="/contact" class="footer__link">
+                    Contact
+                  </Link>
+                </a>
+              </li>
             </ul>
           </div>
           <div class="footer__collumn4">
             <ul>
-              <li>Impressum</li>
+              <li>
+                <a href="" class="footer__link">
+                  <Link to="/impressum" class="footer__link">
+                    Impressum
+                  </Link>
+                </a>
+              </li>
             </ul>
           </div>
         </footer>

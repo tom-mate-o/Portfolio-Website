@@ -8,9 +8,6 @@
     flex-direction: row;
     flex-wrap: nowrap;
     gap: u.rem(20);
-
-    @include u.breakpoint(medium) {
-    }
   }
 
   &__leftcolumn {
@@ -24,15 +21,18 @@
     width: u.rem(100);
     height: auto;
     display: block;
+    fill: var(--dark-color-opacity);
+    transition: fill 2s ease-in-out;
+
+    &:hover {
+      fill: var(--primary-button-bg-hover);
+    }
   }
 
   &__rightcolumn {
     display: flex;
     flex-direction: column;
     width: 100%;
-  }
-
-  @include u.breakpoint(medium) {
   }
 
   &__title {

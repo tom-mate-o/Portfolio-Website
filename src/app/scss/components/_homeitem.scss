@@ -19,10 +19,11 @@
       grid-column: 1/2;
       grid-row: 2/3;
       display: flex;
+      flex-direction: column;
       justify-content: center;
       align-items: center;
       padding-inline: u.rem(20);
-      padding-block: u.rem(25);
+      padding-block: u.rem(20);
 
       p {
         color: var(--content-text-color-dark);
@@ -39,7 +40,6 @@
       display: flex;
       justify-content: center;
       align-items: center;
-      transition: background-size 0.3s ease-in-out;
     }
 
     @include u.breakpoint('medium') {
@@ -81,6 +81,7 @@
       grid-column: 1/2;
       grid-row: 2/3;
       display: flex;
+      flex-direction: column;
       justify-content: center;
       align-items: center;
       padding-inline: u.rem(20);

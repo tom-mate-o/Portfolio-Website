@@ -1,0 +1,40 @@
+@use '../util/' as u;
+
+.singlepage {
+  &__contentContainer {
+    background-color: var(--light-bg);
+    p {
+      color: var(--content-text-color-dark);
+    }
+  }
+
+  &__headerImage {
+    height: u.rem(150);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    h1 {
+      color: var(--content-image-headline-color);
+      font-size: u.rem(30);
+      font-size: clamp(u.rem(30), 2.14rem + 0.47vw, u.rem(40));
+      text-align: center;
+    }
+
+    @include u.breakpoint('medium') {
+      height: u.rem(330);
+    }
+  }
+
+  &__content {
+    padding-inline: u.rem(20);
+    padding-block: u.rem(20);
+
+    @include u.breakpoint('medium') {
+      padding-inline: u.rem(50);
+      padding-block: u.rem(50);
+    }
+  }
+}

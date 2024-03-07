@@ -95,7 +95,7 @@ export default function Home() {
         <div className="homeitem__contentContainer">
           <div className={`homeitem__${item.class}`} key={item.id}>
             <div className="text">
-              <p>{item.text}</p>
+              <p dangerouslySetInnerHTML={{ __html: item.text }} />
             </div>
             <div
               className="image"
