@@ -17,7 +17,7 @@ export const homedata = [
     id: 2,
     class: 'dark',
     name: 'My Skills',
-    text: 'One thing hasn’t changed since I was a kid with a GameBoy and Pokémon Red.<br/>I always wanted to be the very best, and I trained hard for those gym badges.<br/>I’m proud to show you my badge collection regarding the Web Development League.',
+    text: 'One thing hasn’t changed since I was a kid with a GameBoy and Pokémon Red. I always wanted to be the very best, and I trained hard for those gym badges.<br/>I’m proud to show you my badge collection regarding the Web Development League.',
 
     image: skills,
     linkto: '/skills',
