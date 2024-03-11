@@ -268,9 +268,20 @@ a:active {
 .topnav__hamburger {
   width: 30px;
   margin-left: 5px;
+  cursor: pointer;
 }
 @media (min-width: 43.75em) {
   .topnav__hamburger {
+    display: none;
+  }
+}
+.topnav__hamburgerwrapper {
+  height: 100%;
+  width: 100%;
+  cursor: pointer;
+}
+@media (min-width: 43.75em) {
+  .topnav__hamburgerwrapper {
     display: none;
   }
 }

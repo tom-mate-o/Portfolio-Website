@@ -61,6 +61,10 @@ export default function App() {
                   style={{ fill: 'var(--text-color-light)' }}
                   onClick={handleHamburgerClick}
                 />
+                <div
+                  class="topnav__hamburgerwrapper"
+                  onClick={handleHamburgerClick}
+                ></div>
                 <li class="topnav__item">
                   <Link to="/" class="topnav__link">
                     Home

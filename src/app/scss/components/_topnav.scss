@@ -88,6 +88,17 @@
   &__hamburger {
     width: 30px;
     margin-left: 5px;
+    cursor: pointer;
+
+    @include u.breakpoint(medium) {
+      display: none;
+    }
+  }
+
+  &__hamburgerwrapper {
+    height: 100%;
+    width: 100%;
+    cursor: pointer;
 
     @include u.breakpoint(medium) {
       display: none;
