@@ -60,3 +60,76 @@
   transition-duration: 0.5s;
   transition-timing-function: ease-in-out;
 }
+
+.filterbutton {
+  font-family: u.$font;
+  font-size: u.rem(14);
+  font-size: clamp(u.rem(14), 0.84rem + 0.19vw, u.rem(16));
+  font-weight: 700;
+  text-transform: uppercase;
+
+  color: var(--content-text-color-light);
+  border-radius: u.rem(30);
+  padding-block: u.rem(8);
+  padding-inline: u.rem(20);
+  transition-property: background-color, opacity;
+  transition-duration: 0.5s;
+  transition-timing-function: ease-in-out;
+  opacity: 0.7;
+
+  &.All {
+    background-color: var(--all-color);
+    border: 2px solid var(--all-color);
+  }
+
+  &.React {
+    background-color: var(--react-color);
+    border: 2px solid var(--react-color);
+  }
+
+  &.Mongo-DB {
+    background-color: var(--mongo-db-color);
+    border: 2px solid var(--mongo-db-color);
+  }
+
+  &.Express {
+    background-color: var(--express-color);
+    border: 2px solid var(--express-color);
+  }
+
+  &.Node {
+    background-color: var(--node-color);
+    border: 2px solid var(--node-color);
+  }
+
+  &.SASS {
+    background-color: var(--sass-color);
+    border: 2px solid var(--sass-color);
+  }
+
+  &.JavaScript {
+    background-color: var(--javascript-color);
+    border: 2px solid var(--javascript-color);
+  }
+
+  &.Website {
+    background-color: var(--website-color);
+    border: 2px solid var(--website-color);
+  }
+
+  &.Web-App {
+    background-color: var(--web-app-color);
+    border: 2px solid var(--web-app-color);
+  }
+
+  &:hover {
+    opacity: 1;
+    cursor: pointer;
+  }
+
+  &.active {
+    opacity: 1;
+    border: 2px solid var(--dark-bg);
+    color: var(--text-color-light);
+  }
+}

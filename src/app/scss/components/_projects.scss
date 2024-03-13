@@ -1,0 +1,205 @@
+@use '../util/' as u;
+
+.projects {
+  &__contentContainer {
+    display: flex;
+    flex-direction: column;
+    padding-block-start: 45px;
+    row-gap: 80px;
+  }
+
+  &__item {
+    background-color: var(--dark-light);
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto;
+
+    .text {
+      grid-column: 1/2;
+      grid-row: 2/3;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: left;
+      color: var(--content-text-color-dark);
+      text-align: left;
+
+      h1 {
+        padding-block: u.rem(10);
+      }
+    }
+
+    .image {
+      display: flex;
+      justify-content: flex-start;
+      align-items: flex-start;
+      grid-column: 1/2;
+      grid-row: 1/2;
+      width: 100%;
+    }
+
+    .buttons {
+      grid-column: 1/2;
+      grid-row: 3/4;
+      padding-block: u.rem(15);
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      height: auto;
+
+      .svgbuttons {
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+
+        .icon {
+          fill: var(--content-text-color-dark);
+          transition-property: fill;
+          transition-duration: 0.5s;
+          transition-timing-function: ease-in-out;
+
+          &:hover {
+            fill: var(--primary-button-bg-hover);
+          }
+        }
+
+        .website {
+          height: 40px;
+          width: 45px;
+        }
+
+        .github {
+          height: 41.08px;
+          width: 40px;
+        }
+      }
+
+      .morebutton {
+        display: inline-block;
+        font-size: u.rem(15);
+        line-height: 0.7;
+        font-weight: 700;
+        letter-spacing: 0.05em;
+        text-align: center;
+        padding: u.rem(14); // top+bottom 14px
+        border-radius: u.rem(24);
+        height: u.rem(40);
+        width: u.rem(150);
+
+        @include u.breakpoint('medium') {
+          height: u.rem(45);
+          width: u.rem(165);
+          font-size: u.rem(20);
+          line-height: 0.75;
+        }
+
+        transition-property: background-color, border, color; //smooth transition on hover
+        transition-duration: 0.5s;
+        transition-timing-function: ease-in-out;
+
+        padding: u.rem(12);
+        border: 2px solid var(--text-color-dark);
+        color: var(--text-color-dark);
+
+        &:hover {
+          background-color: var(--dark-bg);
+          border: 2px solid var(--dark-bg);
+          color: var(--text-color-light);
+          cursor: pointer;
+        }
+      }
+    }
+
+    .tags {
+      grid-column: 1/2;
+      grid-row: 4/5;
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-end;
+      flex-wrap: wrap;
+      gap: 5px;
+
+      .tagbox {
+        width: auto;
+        padding-inline: 8px;
+        padding-block: 5px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        p {
+          color: white;
+          text-transform: uppercase;
+          font-weight: 700;
+          line-height: 1;
+        }
+      }
+
+      .All {
+        display: none;
+      }
+
+      .React {
+        background-color: var(--react-color);
+      }
+
+      .Mongo-DB {
+        background-color: var(--mongo-db-color);
+      }
+
+      .Express {
+        background-color: var(--express-color);
+      }
+
+      .Node {
+        background-color: var(--node-color);
+      }
+
+      .SASS {
+        background-color: var(--sass-color);
+      }
+
+      .JavaScript {
+        background-color: var(--javascript-color);
+      }
+
+      .Website {
+        background-color: var(--website-color);
+      }
+
+      .Web-App {
+        background-color: var(--web-app-color);
+      }
+    }
+
+    @include u.breakpoint('medium') {
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: auto auto auto;
+
+      .text {
+        grid-column: 2/3;
+        grid-row: 1/2;
+
+        h1 {
+          padding-block-start: u.rem(0);
+        }
+      }
+
+      .image {
+        grid-column: 1/2;
+        grid-row: 1/2;
+        padding-right: 20px;
+      }
+
+      .buttons {
+        grid-column: 2/3;
+        grid-row: 3/4;
+      }
+
+      .tags {
+        grid-column: 1/3;
+        grid-row: 4/5;
+      }
+    }
+  }
+}

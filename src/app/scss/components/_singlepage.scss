@@ -37,4 +37,13 @@
       padding-block: u.rem(50);
     }
   }
+
+  &__filterbuttonsContainer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: u.rem(10);
+  }
 }
