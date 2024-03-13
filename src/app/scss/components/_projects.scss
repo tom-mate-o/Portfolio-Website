@@ -44,7 +44,8 @@
       padding-block: u.rem(15);
       display: flex;
       flex-direction: row;
-      justify-content: space-between;
+      justify-content: flex-end;
+      gap: 20px;
       height: auto;
 
       .svgbuttons {
@@ -157,6 +158,10 @@
 
       .SASS {
         background-color: var(--sass-color);
+      }
+
+      .CSS {
+        background-color: var(--css-color);
       }
 
       .JavaScript {

@@ -65,6 +65,7 @@ h3 {
 h1 {
   font-size: 1.5625rem;
   font-size: clamp(1.5625rem, 1.45rem + 0.47vw, 1.875rem);
+  line-height: 1;
 }
 
 p {
@@ -106,6 +107,7 @@ a:active {
   --node-color: hsl(123, 100%, 32%);
   --sass-color: hsl(310, 57%, 59%);
   --javascript-color: hsl(50, 100%, 33%);
+  --css-color: hsl(228, 78%, 52%);
   --website-color: hsl(14, 100%, 63%);
   --web-app-color: hsl(291, 19%, 52%);
 }
@@ -209,6 +211,10 @@ a:active {
 .filterbutton.JavaScript {
   background-color: var(--javascript-color);
   border: 2px solid var(--javascript-color);
+}
+.filterbutton.CSS {
+  background-color: var(--css-color);
+  border: 2px solid var(--css-color);
 }
 .filterbutton.Website {
   background-color: var(--website-color);
@@ -1269,7 +1275,8 @@ a:active {
   padding-block: 0.9375rem;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: flex-end;
+  gap: 20px;
   height: auto;
 }
 .projects__item .buttons .svgbuttons {
@@ -1366,6 +1373,9 @@ a:active {
 }
 .projects__item .tags .SASS {
   background-color: var(--sass-color);
+}
+.projects__item .tags .CSS {
+  background-color: var(--css-color);
 }
 .projects__item .tags .JavaScript {
   background-color: var(--javascript-color);

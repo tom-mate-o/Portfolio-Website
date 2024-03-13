@@ -1,104 +1,85 @@
-import about from '../../img/home_item_images/about.jpg';
-import skills from '../../img/home_item_images/skills.jpg';
-import projects from '../../img/home_item_images/projects.jpg';
-import photos from '../../img/home_item_images/photos.jpg';
-import art from '../../img/home_item_images/art.jpg';
+import img3lb1 from '../../img/projects_images/3lb/3lb1.jpg';
+import img3lb2 from '../../img/projects_images/3lb/3lb2.jpg';
+import img3lb3 from '../../img/projects_images/3lb/3lb3.jpg';
+import img3lb4 from '../../img/projects_images/3lb/3lb4.jpg';
+import imggimme5_1 from '../../img/projects_images/gimme5/gimme51.jpg';
+import imggimme5_2 from '../../img/projects_images/gimme5/gimme52.jpg';
+import imggimme5_3 from '../../img/projects_images/gimme5/gimme53.jpg';
+import imggimme5_4 from '../../img/projects_images/gimme5/gimme54.jpg';
+import imggimme5_5 from '../../img/projects_images/gimme5/gimme55.jpg';
+import imggimme5_6 from '../../img/projects_images/gimme5/gimme56.jpg';
 
 export const projectdata = [
   {
     id: 1,
 
-    name: 'React',
-    tags: ['All', 'Web-App', 'React', 'JavaScript', 'Express', 'Node'],
-    text: 'Coming from the high mountains of Austria, I washed ashore on an island in the Dutch North Sea. Not only did I switch my Apfelstrudel for Appeltaart, but I also switched my profession from being a metrologist in the automotive industry to following my passion for creating awesome things on the Web.',
+    name: '3LB - Messaging App',
+    tags: [
+      'All',
+      'Web-App',
+      'React',
+      'JavaScript',
+      'Mongo-DB',
+      'Express',
+      'Node',
+      'CSS',
+    ],
+    text: '"3 Little Birbs" was my final project for my Full Stack class at codingschule.de. It is built as a Full Stack Single Page Web Application. The idea was to build a wholesome Social Media App, where you can write down 3 good things that happened to you today, and send them to your friends or out into the wild, to a stranger...',
     images: [
       {
-        original: 'https://picsum.photos/id/1018/1000/600/',
+        original: img3lb1,
       },
       {
-        original: 'https://picsum.photos/id/1015/1000/600/',
+        original: img3lb2,
       },
       {
-        original: 'https://picsum.photos/id/1019/1000/600/',
+        original: img3lb3,
+      },
+      {
+        original: img3lb4,
       },
     ],
-    linkto: '/aboutme',
+    linkto: '/3littlebirbs',
+    github: 'https://github.com/tom-mate-o/3-little-Birbs',
+    demo: 'https://3littlebirbs.netlify.app/',
   },
   {
     id: 2,
 
-    name: 'JavaScript',
-    tags: ['All', 'Web-App', 'JavaScript', 'SASS'],
-    text: 'One thing hasn’t changed since I was a kid with a GameBoy and Pokémon Red. I always wanted to be the very best, and I trained hard for those gym badges.<br/>I’m proud to show you my badge collection regarding the Web Development League.',
-
+    name: 'Gimme 5 - Social App',
+    tags: [
+      'All',
+      'Web-App',
+      'React',
+      'JavaScript',
+      'Mongo-DB',
+      'Express',
+      'Node',
+      'CSS',
+    ],
+    text: '"3 Little Birbs" was my final project for my Full Stack class at codingschule.de. It is built as a Full Stack Single Page Web Application. The idea was to build a wholesome Social Media App, where you can write down 3 good things that happened to you today, and send them to your friends or out into the wild, to a stranger...',
     images: [
       {
-        original: 'https://picsum.photos/id/1018/1000/600/',
+        original: imggimme5_1,
       },
       {
-        original: 'https://picsum.photos/id/1015/1000/600/',
+        original: imggimme5_2,
       },
       {
-        original: 'https://picsum.photos/id/1019/1000/600/',
+        original: imggimme5_3,
+      },
+      {
+        original: imggimme5_4,
+      },
+      {
+        original: imggimme5_5,
+      },
+      {
+        original: imggimme5_6,
       },
     ],
-    linkto: '/skills',
-  },
-  {
-    id: 3,
-
-    name: 'Website',
-    tags: ['All', 'Website', 'JavaScript', 'SASS'],
-    text: 'Here are some of my latest coding projects. From Websites to Full-Stack Web Apps. With screenshots and detailed information.<br/>Please have a look. And if you wish, you can take a deep dive and check their code on my Github page.',
-    images: [
-      {
-        original: 'https://picsum.photos/id/1018/1000/600/',
-      },
-      {
-        original: 'https://picsum.photos/id/1015/1000/600/',
-      },
-      {
-        original: 'https://picsum.photos/id/1019/1000/600/',
-      },
-    ],
-    linkto: '/projects',
-  },
-  {
-    id: 4,
-
-    name: 'SASS Web App',
-    tags: ['All', 'Web-App', 'React', 'JavaScript', 'Mongo-DB', 'SASS'],
-    text: 'Whenever I’m out and about, I love to capture the moment with my camera. Creating beautiful memories is one of my greatest desires.<br/>My shelves are filled with photobooks, just as my hard drive is filled with images. Come along; I’ll show you some of my best. ',
-    images: [
-      {
-        original: 'https://picsum.photos/id/1018/1000/600/',
-      },
-      {
-        original: 'https://picsum.photos/id/1015/1000/600/',
-      },
-      {
-        original: 'https://picsum.photos/id/1019/1000/600/',
-      },
-    ],
-    linkto: '/photos',
-  },
-  {
-    id: 5,
-
-    name: 'Web App',
-    tags: ['All', 'Web-App', 'React', 'JavaScript', 'Node', 'Website'],
-    text: 'I would not describe myself as an artist, but as creative person.<br/>I like to draw, scribble, and paint whenever I can.<br/>Click here to see some of my latest work.',
-    images: [
-      {
-        original: 'https://picsum.photos/id/1018/1000/600/',
-      },
-      {
-        original: 'https://picsum.photos/id/1015/1000/600/',
-      },
-      {
-        original: 'https://picsum.photos/id/1019/1000/600/',
-      },
-    ],
-    linkto: '/art',
+    linkto: '/gimme5app',
+    github: 'https://github.com/tom-mate-o/Social-App-Gimme5',
+    demo: '',
   },
 ];

@@ -41,6 +41,7 @@ export default function Projects() {
               'Node',
               'SASS',
               'JavaScript',
+              'CSS',
               'Website',
               'Web-App',
             ].map((tag) => (
@@ -80,14 +81,30 @@ export default function Projects() {
                     />
                   </div>
                   <div className="buttons">
-                    <div className="morebutton">...more!</div>
+                    {item.linkto ? (
+                      <Link to={item.linkto} class="">
+                        <div className="morebutton">...more!</div>
+                      </Link>
+                    ) : null}
                     <div className="svgbuttons">
-                      <Link to="/" class="icon github">
-                        <GitHubLink class="" />
-                      </Link>
-                      <Link to="/" class="icon website">
-                        <WebsiteLink class="" />
-                      </Link>
+                      {item.github ? (
+                        <Link
+                          to={item.github}
+                          target="_blank"
+                          class="icon github"
+                        >
+                          <GitHubLink class="" />
+                        </Link>
+                      ) : null}
+                      {item.demo ? (
+                        <Link
+                          to={item.demo}
+                          target="_blank"
+                          class="icon website"
+                        >
+                          <WebsiteLink class="" />
+                        </Link>
+                      ) : null}
                     </div>
                   </div>
                   <div className="tags">

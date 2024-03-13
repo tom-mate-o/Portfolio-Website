@@ -112,6 +112,11 @@
     border: 2px solid var(--javascript-color);
   }
 
+  &.CSS {
+    background-color: var(--css-color);
+    border: 2px solid var(--css-color);
+  }
+
   &.Website {
     background-color: var(--website-color);
     border: 2px solid var(--website-color);
