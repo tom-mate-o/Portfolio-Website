@@ -46,4 +46,46 @@
     flex-wrap: wrap;
     gap: u.rem(10);
   }
+
+  &__skillcontainer {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto u.rem(20);
+
+    &__introtext {
+      margin-block-end: 30px;
+    }
+
+    @include u.breakpoint('medium') {
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: auto u.rem(25);
+    }
+
+    &__skillbadge {
+      height: auto;
+      width: u.rem(125);
+      width: clamp(u.rem(125), 7.26rem + 2.35vw, u.rem(150));
+    }
+
+    &__image {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    &__text {
+      text-align: center;
+
+      h2 {
+        margin-block-end: u.rem(5);
+      }
+
+      @include u.breakpoint('medium') {
+        text-align: left;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+      }
+    }
+  }
 }

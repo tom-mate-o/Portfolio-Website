@@ -44,8 +44,15 @@ import tomkra_art043 from '../../img/art_images/tomkra_art043.jpg';
 import tomkra_art044 from '../../img/art_images/tomkra_art044.jpg';
 import tomkra_art045 from '../../img/art_images/tomkra_art045.jpg';
 import tomkra_art046 from '../../img/art_images/tomkra_art046.jpg';
+import tomkra_art047 from '../../img/art_images/tomkra_art047.JPG';
 
 export const images = [
+  {
+    src: tomkra_art047,
+    width: 800,
+    height: 533,
+    caption: 'Acrylic Painting of Pikachu and Caterpie in Van Gogh Style.',
+  },
   {
     src: tomkra_art001,
     width: 800,

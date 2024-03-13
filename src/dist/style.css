@@ -68,6 +68,11 @@ h1 {
   line-height: 1;
 }
 
+h2 {
+  font-size: 1.25rem;
+  font-size: clamp(1.25rem, 1.14rem + 0.47vw, 1.875rem);
+}
+
 p {
   margin: 0;
   font-size: 0.875rem;
@@ -753,6 +758,44 @@ a:active {
   flex-direction: row;
   flex-wrap: wrap;
   gap: 0.625rem;
+}
+.singlepage__skillcontainer {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto auto 1.25rem;
+}
+.singlepage__skillcontainer__introtext {
+  margin-block-end: 30px;
+}
+@media (min-width: 43.75em) {
+  .singlepage__skillcontainer {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto 1.5625rem;
+  }
+}
+.singlepage__skillcontainer__skillbadge {
+  height: auto;
+  width: 7.8125rem;
+  width: clamp(7.8125rem, 7.26rem + 2.35vw, 9.375rem);
+}
+.singlepage__skillcontainer__image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.singlepage__skillcontainer__text {
+  text-align: center;
+}
+.singlepage__skillcontainer__text h2 {
+  margin-block-end: 0.3125rem;
+}
+@media (min-width: 43.75em) {
+  .singlepage__skillcontainer__text {
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
 }
 
 .image-gallery-icon {

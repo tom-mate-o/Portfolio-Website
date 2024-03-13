@@ -1,0 +1,14 @@
+{
+    "name": "Tom Kra Portfolio",
+    "short_name": "Tom Kra Portfolio",
+    "icons": [
+        {
+            "src": "/android-chrome-96x96.png",
+            "sizes": "96x96",
+            "type": "image/png"
+        }
+    ],
+    "theme_color": "#f0e6c3",
+    "background_color": "#f0e6c3",
+    "display": "standalone"
+}
