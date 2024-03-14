@@ -19,6 +19,11 @@ h2 {
   font-size: clamp(u.rem(20), 1.14rem + 0.47vw, u.rem(30));
 }
 
+h3 {
+  font-size: u.rem(20);
+  font-size: clamp(u.rem(20), 1.14rem + 0.47vw, u.rem(30));
+}
+
 p {
   margin: 0;
 

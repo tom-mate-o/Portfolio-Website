@@ -30,6 +30,8 @@ export default function Skills() {
           <p className="singlepage__skillcontainer__introtext">
             As a Full Stack Web Developer....
           </p>
+
+          <h1 class="singlepage__dividerHeadline">Hard Skills</h1>
           <div className="singlepage__skillcontainer">
             <div className="singlepage__skillcontainer__image">
               <img
@@ -164,6 +166,157 @@ export default function Skills() {
                 I am proficient in CSS3 and can style web pages with modern CSS
                 techniques and frameworks.
               </p>
+            </div>
+          </div>
+          <h3 className="singlepage__dividerSubHeadline">Furthermore</h3>
+          <div className="singlepage__furtherSkillsContainer">
+            <div className="singlepage__furtherSkillsContainer__skill">
+              <img
+                className="singlepage__furtherSkillsContainer__skillbadge"
+                src={css3}
+                alt="CSS3"
+              />
+              <p>Version Control with Git and GitHub</p>
+            </div>
+            <div className="singlepage__furtherSkillsContainer__skill">
+              <img
+                className="singlepage__furtherSkillsContainer__skillbadge"
+                src={css3}
+                alt="CSS3"
+              />
+              <p>Developing a Full Stack Web App</p>
+            </div>
+            <div className="singlepage__furtherSkillsContainer__skill">
+              <img
+                className="singlepage__furtherSkillsContainer__skillbadge"
+                src={css3}
+                alt="CSS3"
+              />
+              <p>Deployment with Heroku and Netlify</p>
+            </div>
+            <div className="singlepage__furtherSkillsContainer__skill">
+              <img
+                className="singlepage__furtherSkillsContainer__skillbadge"
+                src={css3}
+                alt="CSS3"
+              />
+              <p>Creating an API Deployment on RapidAPI</p>
+            </div>
+            <div className="singlepage__furtherSkillsContainer__skill">
+              <img
+                className="singlepage__furtherSkillsContainer__skillbadge"
+                src={css3}
+                alt="CSS3"
+              />
+              <p>Problem Decomposition</p>
+            </div>
+            <div className="singlepage__furtherSkillsContainer__skill">
+              <img
+                className="singlepage__furtherSkillsContainer__skillbadge"
+                src={css3}
+                alt="CSS3"
+              />
+              <p>Thinking in React</p>
+            </div>
+            <div className="singlepage__furtherSkillsContainer__skill">
+              <img
+                className="singlepage__furtherSkillsContainer__skillbadge"
+                src={css3}
+                alt="CSS3"
+              />
+              <p>Functional/Asynchronous Programming</p>
+            </div>
+            <div className="singlepage__furtherSkillsContainer__skill">
+              <img
+                className="singlepage__furtherSkillsContainer__skillbadge"
+                src={css3}
+                alt="CSS3"
+              />
+              <p>Designing Algorithms</p>
+            </div>
+            <div className="singlepage__furtherSkillsContainer__skill">
+              <img
+                className="singlepage__furtherSkillsContainer__skillbadge"
+                src={css3}
+                alt="CSS3"
+              />
+              <p>Making Ideas Visible on a MIRO Board</p>
+            </div>
+            <div className="singlepage__furtherSkillsContainer__skill">
+              <img
+                className="singlepage__furtherSkillsContainer__skillbadge"
+                src={css3}
+                alt="CSS3"
+              />
+              <p>Designing Mockups with FIGMA</p>
+            </div>
+          </div>
+
+          <h1 class="singlepage__dividerHeadline">Soft Skills</h1>
+          <div className="singlepage__furtherSkillsContainer">
+            <div className="singlepage__furtherSkillsContainer__skill">
+              <img
+                className="singlepage__furtherSkillsContainer__skillbadge"
+                src={css3}
+                alt="CSS3"
+              />
+              <p>Project Management with SCRUM</p>
+            </div>
+            <div className="singlepage__furtherSkillsContainer__skill">
+              <img
+                className="singlepage__furtherSkillsContainer__skillbadge"
+                src={css3}
+                alt="CSS3"
+              />
+              <p>Confident Communication</p>
+            </div>
+            <div className="singlepage__furtherSkillsContainer__skill">
+              <img
+                className="singlepage__furtherSkillsContainer__skillbadge"
+                src={css3}
+                alt="CSS3"
+              />
+              <p>Growth Mindset</p>
+            </div>
+            <div className="singlepage__furtherSkillsContainer__skill">
+              <img
+                className="singlepage__furtherSkillsContainer__skillbadge"
+                src={css3}
+                alt="CSS3"
+              />
+              <p>Concentration & Focus</p>
+            </div>
+            <div className="singlepage__furtherSkillsContainer__skill">
+              <img
+                className="singlepage__furtherSkillsContainer__skillbadge"
+                src={css3}
+                alt="CSS3"
+              />
+              <p>Time Management</p>
+            </div>
+            <div className="singlepage__furtherSkillsContainer__skill">
+              <img
+                className="singlepage__furtherSkillsContainer__skillbadge"
+                src={css3}
+                alt="CSS3"
+              />
+              <p>Self-Motivation</p>
+            </div>
+            <div className="singlepage__furtherSkillsContainer__skill">
+              <img
+                className="singlepage__furtherSkillsContainer__skillbadge"
+                src={css3}
+                alt="CSS3"
+              />
+              <p>Solution Focus</p>
+            </div>
+            <div className="singlepage__furtherSkillsContainer__skill">
+              <img
+                className="singlepage__furtherSkillsContainer__skillbadge"
+                src={css3}
+                alt="CSS3"
+              />
+              <p>Sparking the Flame in Other People</p>
             </div>
           </div>
         </div>

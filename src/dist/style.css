@@ -73,6 +73,11 @@ h2 {
   font-size: clamp(1.25rem, 1.14rem + 0.47vw, 1.875rem);
 }
 
+h3 {
+  font-size: 1.25rem;
+  font-size: clamp(1.25rem, 1.14rem + 0.47vw, 1.875rem);
+}
+
 p {
   margin: 0;
   font-size: 0.875rem;
@@ -741,6 +746,20 @@ a:active {
     height: 20.625rem;
   }
 }
+.singlepage__dividerHeadline {
+  text-align: center;
+  padding-block: 0.625rem;
+  background-color: var(--dark-bg);
+  color: var(--content-text-color-light);
+  margin-block-end: 1.25rem;
+}
+.singlepage__dividerSubHeadline {
+  text-align: center;
+  padding-block: 0.125rem;
+  background-color: var(--main-bg);
+  color: var(--content-text-color-dark);
+  margin-block-end: 1.25rem;
+}
 .singlepage__content {
   padding-inline: 1.25rem;
   padding-block: 1.25rem;
@@ -796,6 +815,29 @@ a:active {
     flex-direction: column;
     justify-content: center;
   }
+}
+.singlepage__furtherSkillsContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 1.875rem;
+  flex-wrap: wrap;
+  margin-block-end: 1.875rem;
+}
+.singlepage__furtherSkillsContainer__skill {
+  width: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  text-align: center;
+}
+.singlepage__furtherSkillsContainer__skill p {
+  font-weight: 700;
+}
+.singlepage__furtherSkillsContainer__skillbadge {
+  height: auto;
+  width: 5rem;
 }
 
 .image-gallery-icon {

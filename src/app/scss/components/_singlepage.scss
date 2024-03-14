@@ -28,6 +28,22 @@
     }
   }
 
+  &__dividerHeadline {
+    text-align: center;
+    padding-block: u.rem(10);
+    background-color: var(--dark-bg);
+    color: var(--content-text-color-light);
+    margin-block-end: u.rem(20);
+  }
+
+  &__dividerSubHeadline {
+    text-align: center;
+    padding-block: u.rem(2);
+    background-color: var(--main-bg);
+    color: var(--content-text-color-dark);
+    margin-block-end: u.rem(20);
+  }
+
   &__content {
     padding-inline: u.rem(20);
     padding-block: u.rem(20);
@@ -86,6 +102,33 @@
         flex-direction: column;
         justify-content: center;
       }
+    }
+  }
+
+  &__furtherSkillsContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: u.rem(30);
+    flex-wrap: wrap;
+    margin-block-end: u.rem(30);
+
+    &__skill {
+      width: 100px;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: center;
+      text-align: center;
+
+      p {
+        font-weight: 700;
+      }
+    }
+
+    &__skillbadge {
+      height: auto;
+      width: u.rem(80);
     }
   }
 }
