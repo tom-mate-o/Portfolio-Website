@@ -42,7 +42,7 @@ export const homedata = [
     id: 5,
     class: 'light',
     name: 'Art',
-    text: 'I would not describe myself as an artist, but as creative person.<br/>I like to draw, scribble, and paint whenever I can.<br/>Click here to see some of my latest work.',
+    text: 'I would not describe myself as an artist, but as a creative person.<br/>I like to draw, scribble, and paint whenever I can.<br/>Click here to see some of my latest work.',
     image: art,
     linkto: '/art',
   },
