@@ -1,0 +1,65 @@
+@use '../util/' as u;
+
+.about {
+  &__profilecontainer {
+    background-color: var(--dark-bg);
+    display: grid;
+    padding-block: u.rem(20);
+    padding-inline: u.rem(20);
+    margin-block-end: u.rem(30);
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto;
+
+    @include u.breakpoint('medium') {
+      grid-template-columns: auto auto;
+      grid-template-rows: auto;
+      padding-inline: u.rem(30);
+    }
+
+    &__image {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding-block-end: u.rem(15);
+      img {
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+        object-fit: cover;
+      }
+
+      @include u.breakpoint('medium') {
+        padding-block-end: 0;
+      }
+    }
+
+    &__text {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: var(--text-color-light);
+
+      table {
+        td {
+          padding: 5px;
+          padding-inline-end: 10px;
+          text-align: left;
+
+          &:first-child {
+            font-weight: bold;
+          }
+        }
+
+        @include u.breakpoint('medium') {
+          margin-left: 20px;
+        }
+      }
+    }
+  }
+
+  &__text {
+    padding: u.rem(10);
+    text-align: justify;
+  }
+}

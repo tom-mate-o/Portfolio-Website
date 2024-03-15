@@ -66,9 +66,9 @@ export default function Home() {
               }`}
             </p>
             <div className="hero__buttons">
-              <a href="#contact" className="hero__button button primary">
+              <Link to="/contact" className="hero__button button primary">
                 Let's Talk!
-              </a>
+              </Link>
               <Link to="/skills" className="hero__button button secondary">
                 My Skillset
               </Link>

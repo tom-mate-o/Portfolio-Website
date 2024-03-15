@@ -9,6 +9,7 @@ import sass from '../img/sass.png';
 import js from '../img/js.png';
 import html5 from '../img/html5.png';
 import css3 from '../img/css3.png';
+import { skillicons } from '../app/data/skillicons';
 
 export default function Skills() {
   useEffect(() => {
@@ -28,7 +29,12 @@ export default function Skills() {
         </div>
         <div className="singlepage__content">
           <p className="singlepage__skillcontainer__introtext">
-            As a Full Stack Web Developer....
+            As a Full Stack Web Developer, I bring a broad range of abilities to
+            the table, which helps me to create reliable, accessible and stylish
+            web applications.
+            <br />
+            <br />
+            Here's a glimpse into my toolbox regarding hard- and soft skills:
           </p>
 
           <h1 class="singlepage__dividerHeadline">Hard Skills</h1>
@@ -43,8 +49,9 @@ export default function Skills() {
             <div className="singlepage__skillcontainer__text">
               <h2>MongoDB</h2>
               <p>
-                I have experience working with MongoDB and can perform CRUD
-                operations using the MongoDB database.
+                I'm skilled at working with MongoDB in comination with Mongoose,
+                where I can create, read, filter, update, and delete data
+                easily.
               </p>
             </div>
           </div>
@@ -60,8 +67,9 @@ export default function Skills() {
             <div className="singlepage__skillcontainer__text">
               <h2>Express</h2>
               <p>
-                I am proficient in using Express.js to build robust and scalable
-                web applications.
+                Using Express.js, I can develop robust web applications. It's my
+                reliable companion for crafting a REST backend and combining it
+                with MongoDB.
               </p>
             </div>
           </div>
@@ -77,8 +85,10 @@ export default function Skills() {
             <div className="singlepage__skillcontainer__text">
               <h2>React</h2>
               <p>
-                I have extensive experience in developing web applications using
-                React and its ecosystem.
+                React is my go-to framework for building dynamic and
+                user-friendly web apps. I'm very confident within is ecosystem
+                using hooks, variables, the component-based architecture, and
+                also styling them within styled-components.
               </p>
             </div>
           </div>
@@ -94,8 +104,9 @@ export default function Skills() {
             <div className="singlepage__skillcontainer__text">
               <h2>Node.js</h2>
               <p>
-                I am proficient in building server-side applications using
-                Node.js and its frameworks.
+                Node.js is my preferred runtime environment for building server
+                & backend applications. I'm familiar with the npm-package system
+                and setting up a development environment.
               </p>
             </div>
           </div>
@@ -111,8 +122,9 @@ export default function Skills() {
             <div className="singlepage__skillcontainer__text">
               <h2>Sass</h2>
               <p>
-                I have experience using Sass to write modular and maintainable
-                CSS for web applications.
+                Sass helps me write clean and easy-to-maintain CSS code. I love
+                to modularize my stylesheets and use variables, mixins, and
+                functions to make them more efficient.
               </p>
             </div>
           </div>
@@ -128,9 +140,9 @@ export default function Skills() {
             <div className="singlepage__skillcontainer__text">
               <h2>JavaScript</h2>
               <p>
-                I am proficient in JavaScript and can develop interactive and
-                dynamic web applications using modern JavaScript frameworks and
-                libraries.
+                When it comes to interactivity and dynamic content, and React is
+                not an option, JavaScript is always a reliable choice. I'm
+                familiar with ES6 and the most important concepts and methods.
               </p>
             </div>
           </div>
@@ -146,8 +158,9 @@ export default function Skills() {
             <div className="singlepage__skillcontainer__text">
               <h2>HTML5</h2>
               <p>
-                I have a good understanding of HTML5 and can create semantic and
-                accessible web pages.
+                HTML5 is the cornerstone of my web page creation, ensuring they
+                well-organized structured and accessible for users and
+                screenreaders .
               </p>
             </div>
           </div>
@@ -163,8 +176,10 @@ export default function Skills() {
             <div className="singlepage__skillcontainer__text">
               <h2>CSS3</h2>
               <p>
-                I am proficient in CSS3 and can style web pages with modern CSS
-                techniques and frameworks.
+                It's great fun for me to turn blank, unstylized- into
+                nice-looking websites. Making them look great and responsive on
+                all devices. And there is no better feeling than when it matches
+                100% with the design file.
               </p>
             </div>
           </div>
@@ -173,7 +188,7 @@ export default function Skills() {
             <div className="singlepage__furtherSkillsContainer__skill">
               <img
                 className="singlepage__furtherSkillsContainer__skillbadge"
-                src={css3}
+                src={skillicons.versioncontrol}
                 alt="CSS3"
               />
               <p>Version Control with Git and GitHub</p>
@@ -181,7 +196,7 @@ export default function Skills() {
             <div className="singlepage__furtherSkillsContainer__skill">
               <img
                 className="singlepage__furtherSkillsContainer__skillbadge"
-                src={css3}
+                src={skillicons.fullstackapp}
                 alt="CSS3"
               />
               <p>Developing a Full Stack Web App</p>
@@ -189,7 +204,7 @@ export default function Skills() {
             <div className="singlepage__furtherSkillsContainer__skill">
               <img
                 className="singlepage__furtherSkillsContainer__skillbadge"
-                src={css3}
+                src={skillicons.deployment}
                 alt="CSS3"
               />
               <p>Deployment with Heroku and Netlify</p>
@@ -197,7 +212,7 @@ export default function Skills() {
             <div className="singlepage__furtherSkillsContainer__skill">
               <img
                 className="singlepage__furtherSkillsContainer__skillbadge"
-                src={css3}
+                src={skillicons.api}
                 alt="CSS3"
               />
               <p>Creating an API Deployment on RapidAPI</p>
@@ -205,7 +220,7 @@ export default function Skills() {
             <div className="singlepage__furtherSkillsContainer__skill">
               <img
                 className="singlepage__furtherSkillsContainer__skillbadge"
-                src={css3}
+                src={skillicons.problemdecomposition}
                 alt="CSS3"
               />
               <p>Problem Decomposition</p>
@@ -213,7 +228,7 @@ export default function Skills() {
             <div className="singlepage__furtherSkillsContainer__skill">
               <img
                 className="singlepage__furtherSkillsContainer__skillbadge"
-                src={css3}
+                src={skillicons.thinkinginreact}
                 alt="CSS3"
               />
               <p>Thinking in React</p>
@@ -221,15 +236,15 @@ export default function Skills() {
             <div className="singlepage__furtherSkillsContainer__skill">
               <img
                 className="singlepage__furtherSkillsContainer__skillbadge"
-                src={css3}
+                src={skillicons.asyncprogramming}
                 alt="CSS3"
               />
-              <p>Functional/Asynchronous Programming</p>
+              <p>Functional & Asynchronous Programming</p>
             </div>
             <div className="singlepage__furtherSkillsContainer__skill">
               <img
                 className="singlepage__furtherSkillsContainer__skillbadge"
-                src={css3}
+                src={skillicons.algorithm}
                 alt="CSS3"
               />
               <p>Designing Algorithms</p>
@@ -237,7 +252,7 @@ export default function Skills() {
             <div className="singlepage__furtherSkillsContainer__skill">
               <img
                 className="singlepage__furtherSkillsContainer__skillbadge"
-                src={css3}
+                src={skillicons.ideas}
                 alt="CSS3"
               />
               <p>Making Ideas Visible on a MIRO Board</p>
@@ -245,7 +260,7 @@ export default function Skills() {
             <div className="singlepage__furtherSkillsContainer__skill">
               <img
                 className="singlepage__furtherSkillsContainer__skillbadge"
-                src={css3}
+                src={skillicons.mockup}
                 alt="CSS3"
               />
               <p>Designing Mockups with FIGMA</p>
@@ -257,7 +272,7 @@ export default function Skills() {
             <div className="singlepage__furtherSkillsContainer__skill">
               <img
                 className="singlepage__furtherSkillsContainer__skillbadge"
-                src={css3}
+                src={skillicons.scrum}
                 alt="CSS3"
               />
               <p>Project Management with SCRUM</p>
@@ -265,7 +280,7 @@ export default function Skills() {
             <div className="singlepage__furtherSkillsContainer__skill">
               <img
                 className="singlepage__furtherSkillsContainer__skillbadge"
-                src={css3}
+                src={skillicons.confidentcommunication}
                 alt="CSS3"
               />
               <p>Confident Communication</p>
@@ -273,7 +288,7 @@ export default function Skills() {
             <div className="singlepage__furtherSkillsContainer__skill">
               <img
                 className="singlepage__furtherSkillsContainer__skillbadge"
-                src={css3}
+                src={skillicons.growthmindset}
                 alt="CSS3"
               />
               <p>Growth Mindset</p>
@@ -281,7 +296,7 @@ export default function Skills() {
             <div className="singlepage__furtherSkillsContainer__skill">
               <img
                 className="singlepage__furtherSkillsContainer__skillbadge"
-                src={css3}
+                src={skillicons.focus}
                 alt="CSS3"
               />
               <p>Concentration & Focus</p>
@@ -289,7 +304,7 @@ export default function Skills() {
             <div className="singlepage__furtherSkillsContainer__skill">
               <img
                 className="singlepage__furtherSkillsContainer__skillbadge"
-                src={css3}
+                src={skillicons.timemanagement}
                 alt="CSS3"
               />
               <p>Time Management</p>
@@ -297,7 +312,7 @@ export default function Skills() {
             <div className="singlepage__furtherSkillsContainer__skill">
               <img
                 className="singlepage__furtherSkillsContainer__skillbadge"
-                src={css3}
+                src={skillicons.selfmotivation}
                 alt="CSS3"
               />
               <p>Self-Motivation</p>
@@ -305,19 +320,43 @@ export default function Skills() {
             <div className="singlepage__furtherSkillsContainer__skill">
               <img
                 className="singlepage__furtherSkillsContainer__skillbadge"
-                src={css3}
+                src={skillicons.solutionfocused}
                 alt="CSS3"
               />
-              <p>Solution Focus</p>
+              <p>Solution Oriented</p>
             </div>
             <div className="singlepage__furtherSkillsContainer__skill">
               <img
                 className="singlepage__furtherSkillsContainer__skillbadge"
-                src={css3}
+                src={skillicons.sparkingflame}
                 alt="CSS3"
               />
-              <p>Sparking the Flame in Other People</p>
+              <p>Sparking the Flame in Others</p>
             </div>
+            <div className="singlepage__furtherSkillsContainer__skill">
+              <img
+                className="singlepage__furtherSkillsContainer__skillbadge"
+                src={skillicons.flexible}
+                alt="CSS3"
+              />
+              <p>Flexibility</p>
+            </div>
+            <div className="singlepage__furtherSkillsContainer__skill">
+              <img
+                className="singlepage__furtherSkillsContainer__skillbadge"
+                src={skillicons.adaptive}
+                alt="CSS3"
+              />
+              <p>Adaptiveness</p>
+            </div>
+          </div>
+          <div className="singlepage__furtherSkillsContainer__iconCredit">
+            <a
+              href="https://www.flaticon.com/authors/freepik"
+              title="Icons created by Freepik - Flaticon"
+            >
+              Icons created by Freepik - Flaticon
+            </a>
           </div>
         </div>
       </div>
