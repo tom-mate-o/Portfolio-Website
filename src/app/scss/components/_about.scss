@@ -62,4 +62,41 @@
     padding: u.rem(10);
     text-align: justify;
   }
+
+  &__hobbiesContainer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: u.rem(20);
+    &__hobby {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: u.rem(10);
+      margin-block-end: u.rem(30);
+
+      &__image {
+        img {
+          width: u.rem(100);
+          height: u.rem(100);
+          border-radius: 50%;
+          object-fit: cover;
+        }
+      }
+
+      &__text {
+        text-align: center;
+      }
+    }
+  }
+
+  &__footnote {
+    text-align: right;
+    font-size: u.rem(10);
+    color: grey;
+  }
 }

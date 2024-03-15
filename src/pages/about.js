@@ -44,11 +44,12 @@ export default function About() {
                 </tr>
                 <tr>
                   <td>Languages</td>
-                  <td>German (native), English (C1), Dutch (B1)</td>
+                  <td>German (native), English (C1), Dutch (B1)*</td>
                 </tr>
               </table>
             </div>
           </div>
+
           <h3 className="singlepage__dividerSubHeadline">Bio</h3>
           <p className="about__text">
             Hi, I'm Tom, 32, originally from Styria, Austria.
@@ -114,6 +115,49 @@ export default function About() {
           <h3 className="singlepage__dividerSubHeadline">
             Hobbies and things I like
           </h3>
+          <div className="about__hobbiesContainer">
+            <div className="about__hobbiesContainer__hobby">
+              <div className="about__hobbiesContainer__hobby__image">
+                {' '}
+                <img src={aboutBig}></img>
+              </div>
+              <div className="about__hobbiesContainer__hobby__text">
+                hobbyname
+              </div>
+            </div>
+
+            <div className="about__hobbiesContainer__hobby">
+              <div className="about__hobbiesContainer__hobby__image">
+                {' '}
+                <img src={aboutBig}></img>
+              </div>
+              <div className="about__hobbiesContainer__hobby__text">
+                hobbyname
+              </div>
+            </div>
+
+            <div className="about__hobbiesContainer__hobby">
+              <div className="about__hobbiesContainer__hobby__image">
+                {' '}
+                <img src={aboutBig}></img>
+              </div>
+              <div className="about__hobbiesContainer__hobby__text">
+                hobbyname
+              </div>
+            </div>
+          </div>
+          <h3 className="singlepage__dividerSubHeadline">Hot Rotation</h3>
+          <iframe
+            style={{ borderRadius: '12px' }}
+            src="https://open.spotify.com/embed/playlist/2UZ6ro8L2RJzJAclydbsXC?utm_source=generator&theme=0"
+            width="100%"
+            height="152"
+            frameBorder="0"
+            allowFullScreen=""
+            allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+            loading="lazy"
+          ></iframe>
+          <p className="about__footnote">*almost 😛</p>
         </div>
       </div>
     </div>

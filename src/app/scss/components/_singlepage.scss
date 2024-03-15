@@ -136,6 +136,7 @@
       height: auto;
       width: u.rem(80);
       margin-block-end: u.rem(10);
+      filter: sepia(60%);
     }
 
     &__iconCredit {

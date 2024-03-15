@@ -846,6 +846,7 @@ a:active {
   height: auto;
   width: 5rem;
   margin-block-end: 0.625rem;
+  filter: sepia(60%);
 }
 .singlepage__furtherSkillsContainer__iconCredit {
   text-align: center;
@@ -1570,4 +1571,35 @@ a:active {
 .about__text {
   padding: 0.625rem;
   text-align: justify;
+}
+.about__hobbiesContainer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 1.25rem;
+}
+.about__hobbiesContainer__hobby {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.625rem;
+  margin-block-end: 1.875rem;
+}
+.about__hobbiesContainer__hobby__image img {
+  width: 6.25rem;
+  height: 6.25rem;
+  border-radius: 50%;
+  object-fit: cover;
+}
+.about__hobbiesContainer__hobby__text {
+  text-align: center;
+}
+.about__footnote {
+  text-align: right;
+  font-size: 0.625rem;
+  color: grey;
 }/*# sourceMappingURL=style.css.map */
