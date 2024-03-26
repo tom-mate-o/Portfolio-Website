@@ -77,7 +77,8 @@ export default function Projects() {
                       showThumbnails={false}
                       slideDuration={500}
                       slideInterval={2000}
-                      emulateTouch={true}
+                      emulateTouch={false}
+                      swipable={false}
                     />
                   </div>
                   <div className="buttons">
