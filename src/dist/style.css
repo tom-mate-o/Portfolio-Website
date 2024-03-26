@@ -110,6 +110,7 @@ a:active {
   --secondary-button-border-hover: hsl(47, 61%, 85%);
   --secondary-button-text-color: hsl(0, 0%, 100%);
   --secondary-button-text-color-hover: hsl(49, 11%, 29%);
+  --dark-color-mobile-gallery-opacity: rgba(0, 0, 0, 0.4);
   --all-color: hsl(0, 0%, 50%);
   --react-color: hsl(207, 46%, 63%);
   --mongo-db-color: hsl(120, 56%, 22%);
@@ -1496,6 +1497,7 @@ a:active {
   .projects__item .text {
     grid-column: 2/3;
     grid-row: 1/2;
+    margin-left: 0.9375rem;
   }
   .projects__item .text h1 {
     padding-block-start: 0rem;
@@ -1513,6 +1515,22 @@ a:active {
     grid-column: 1/3;
     grid-row: 4/5;
   }
+}
+
+.antiSwipe__div {
+  display: flex;
+}
+@media (min-width: 43.75em) {
+  .antiSwipe__div {
+    display: none;
+  }
+}
+.antiSwipe__div__icon {
+  width: 50px;
+  height: 50px;
+  background-color: var(--dark-color-mobile-gallery-opacity);
+  border-radius: 50%;
+  padding: 5px;
 }
 
 .about__profilecontainer {

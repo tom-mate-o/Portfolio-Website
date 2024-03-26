@@ -184,6 +184,7 @@
       .text {
         grid-column: 2/3;
         grid-row: 1/2;
+        margin-left: u.rem(15);
 
         h1 {
           padding-block-start: u.rem(0);
@@ -205,6 +206,24 @@
         grid-column: 1/3;
         grid-row: 4/5;
       }
+    }
+  }
+}
+
+.antiSwipe {
+  &__div {
+    display: flex;
+
+    @include u.breakpoint('medium') {
+      display: none;
+    }
+
+    &__icon {
+      width: 50px;
+      height: 50px;
+      background-color: var(--dark-color-mobile-gallery-opacity);
+      border-radius: 50%;
+      padding: 5px;
     }
   }
 }

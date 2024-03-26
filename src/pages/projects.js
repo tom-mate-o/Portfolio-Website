@@ -6,6 +6,7 @@ import { BrowserRouter, Routes, Route, Link } from 'react-router-dom';
 import ImageGallery from 'react-image-gallery';
 import { ReactComponent as GitHubLink } from '../img/github.svg';
 import { ReactComponent as WebsiteLink } from '../img/eye-regular.svg';
+import { MdOutlineTouchApp } from 'react-icons/md';
 
 export default function Projects() {
   useEffect(() => {
@@ -14,10 +15,19 @@ export default function Projects() {
 
   const [selectedTags, setSelectedTags] = useState(['All']);
   const [activeTag, setActiveTag] = useState('All');
+  const [isGalleryActive, setIsGalleryActive] = useState(false);
 
   const handleTagClick = (tag) => {
     setSelectedTags([tag]);
     setActiveTag(tag);
+  };
+
+  const handleGalleryActivation = (id) => {
+    setIsGalleryActive((prevState) => ({ ...prevState, [id]: true }));
+
+    setTimeout(() => {
+      setIsGalleryActive((prevState) => ({ ...prevState, [id]: false }));
+    }, 10000);
   };
 
   return (
@@ -67,7 +77,33 @@ export default function Projects() {
                     <h1>{item.name}</h1>
                     <p dangerouslySetInnerHTML={{ __html: item.text }} />
                   </div>
-                  <div className="image">
+                  <div className="antiSwipe" style={{ position: 'relative' }}>
+                    {!isGalleryActive[item.id] && (
+                      <div
+                        className="antiSwipe__div"
+                        style={{
+                          position: 'absolute',
+                          top: 0,
+                          left: 0,
+                          right: 0,
+                          bottom: 0,
+                          zIndex: 2,
+                          backgroundColor:
+                            'var(--dark-color-mobile-gallery-opacity)',
+
+                          flexDirection: 'column',
+                          justifyContent: 'center',
+                          alignItems: 'center',
+                          color: 'white',
+                        }}
+                        onClick={() => handleGalleryActivation(item.id)}
+                      >
+                        <MdOutlineTouchApp className="antiSwipe__div__icon" />
+
+                        <h3>Tap to unlock swiping</h3>
+                      </div>
+                    )}
+
                     <ImageGallery
                       class="imageGallery"
                       items={item.images}
@@ -77,8 +113,6 @@ export default function Projects() {
                       showThumbnails={false}
                       slideDuration={500}
                       slideInterval={2000}
-                      emulateTouch={false}
-                      swipable={false}
                     />
                   </div>
                   <div className="buttons">
