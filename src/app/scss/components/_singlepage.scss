@@ -58,6 +58,25 @@
     }
   }
 
+  &__filterContainer {
+    background-color: var(--main-bg);
+    padding: u.rem(10);
+    margin-block-start: u.rem(20);
+
+    &__title {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: flex-start;
+      text-align: center;
+      gap: u.rem(5);
+      color: var(--content-text-color-dark);
+      margin-block-end: u.rem(10);
+      line-height: 1;
+      font-weight: 700;
+    }
+  }
+
   &__filterbuttonsContainer {
     width: 100%;
     display: flex;

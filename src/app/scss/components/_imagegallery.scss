@@ -39,7 +39,7 @@ $ig-shadow: 0 2px 2px lighten($ig-black, 10%);
 
   &:focus {
     // a11y support
-    outline: 2px solid $ig-blue;
+    outline: none;
   }
 }
 

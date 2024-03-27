@@ -193,7 +193,7 @@ a:active {
   transition-property: background-color, opacity;
   transition-duration: 0.5s;
   transition-timing-function: ease-in-out;
-  opacity: 0.7;
+  opacity: 0.6;
 }
 .filterbutton.All {
   background-color: var(--all-color);
@@ -776,6 +776,23 @@ a:active {
     padding-block: 3.125rem;
   }
 }
+.singlepage__filterContainer {
+  background-color: var(--main-bg);
+  padding: 0.625rem;
+  margin-block-start: 1.25rem;
+}
+.singlepage__filterContainer__title {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+  text-align: center;
+  gap: 0.3125rem;
+  color: var(--content-text-color-dark);
+  margin-block-end: 0.625rem;
+  line-height: 1;
+  font-weight: 700;
+}
 .singlepage__filterbuttonsContainer {
   width: 100%;
   display: flex;
@@ -879,7 +896,7 @@ a:active {
   }
 }
 .image-gallery-icon:focus {
-  outline: 2px solid var(--secondary-button-bg-hover);
+  outline: none;
 }
 
 .image-gallery-using-mouse .image-gallery-icon:focus {
@@ -1516,6 +1533,36 @@ a:active {
     grid-row: 4/5;
   }
 }
+.projects__item.wide {
+  grid-template-columns: 5fr 1fr;
+  grid-template-rows: auto auto auto;
+}
+.projects__item.wide .text {
+  grid-column: 1/2;
+  grid-row: 2/3;
+  margin-inline-start: 0;
+  margin-inline-end: 1.25rem;
+  margin-block-end: 0.9375rem;
+}
+.projects__item.wide .text h1 {
+  padding-block-start: 0.9375rem;
+}
+.projects__item.wide .antiSwipe {
+  grid-column: 1/3;
+  grid-row: 1/2;
+}
+.projects__item.wide .buttons {
+  grid-column: 2/3;
+  grid-row: 2/3;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-end;
+}
+.projects__item.wide .tags {
+  grid-column: 1/3;
+  grid-row: 4/5;
+}
 
 .antiSwipe__div {
   display: flex;
@@ -1531,6 +1578,39 @@ a:active {
   background-color: var(--dark-color-mobile-gallery-opacity);
   border-radius: 50%;
   padding: 5px;
+}
+.antiSwipe .toggleWideButton {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  z-index: 1000;
+  width: 1.25rem;
+  width: clamp(1.25rem, 0.9198943662rem + 1.4084507042vw, 2.1875rem);
+  height: 1.25rem;
+  height: clamp(1.25rem, 0.9198943662rem + 1.4084507042vw, 2.1875rem);
+  background-color: var(--dark-color-mobile-gallery-opacity);
+  border-radius: 50%;
+  padding: 5px;
+  border: none;
+  opacity: 50%;
+  transition: all 0.2s ease-in-out;
+}
+.antiSwipe .toggleWideButton:hover {
+  opacity: 100%;
+  transform: scale(1.2);
+}
+.antiSwipe .toggleWideButton:hover .toggleIcon {
+  color: var(--secondary-button-bg-hover);
+}
+.antiSwipe .toggleWideButton .toggleIcon {
+  color: white;
+  height: 100%;
+  width: 100%;
+}
+@media (max-width: 43.74875em) {
+  .antiSwipe .toggleWideButton {
+    display: none;
+  }
 }
 
 .about__profilecontainer {

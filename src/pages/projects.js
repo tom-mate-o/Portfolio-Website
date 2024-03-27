@@ -7,6 +7,9 @@ import ImageGallery from 'react-image-gallery';
 import { ReactComponent as GitHubLink } from '../img/github.svg';
 import { ReactComponent as WebsiteLink } from '../img/eye-regular.svg';
 import { MdOutlineTouchApp } from 'react-icons/md';
+import { TbViewportWide } from 'react-icons/tb';
+import { TbViewportNarrow } from 'react-icons/tb';
+import { TbFilter } from 'react-icons/tb';
 
 export default function Projects() {
   useEffect(() => {
@@ -16,6 +19,7 @@ export default function Projects() {
   const [selectedTags, setSelectedTags] = useState(['All']);
   const [activeTag, setActiveTag] = useState('All');
   const [isGalleryActive, setIsGalleryActive] = useState(false);
+  const [isWide, setIsWide] = useState({});
 
   const handleTagClick = (tag) => {
     setSelectedTags([tag]);
@@ -42,28 +46,42 @@ export default function Projects() {
           <h1 className="singlepage__headerTitle">Projects</h1>
         </div>
         <div className="singlepage__content">
-          <div className="singlepage__filterbuttonsContainer">
-            {[
-              'All',
-              'React',
-              'Mongo-DB',
-              'Express',
-              'Node',
-              'SASS',
-              'JavaScript',
-              'CSS',
-              'Website',
-              'Web-App',
-            ].map((tag) => (
-              <button
-                className={`filterbutton ${tag} ${
-                  activeTag === tag ? 'active' : ''
-                }`}
-                onClick={() => handleTagClick(tag)}
-              >
-                {tag}
-              </button>
-            ))}
+          <p>
+            Here are some of my latest coding projects. From Websites to
+            Full-Stack Web Apps. With screenshots and detailed information.
+            Please have a look. And if you wish, you can take a deep dive and
+            check their code on my Github page.
+          </p>
+          <div className="singlepage__filterContainer">
+            <div className="singlepage__filterContainer__title">
+              <p>
+                <TbFilter />
+              </p>
+              <p>Filter Projects:</p>
+            </div>
+            <div className="singlepage__filterbuttonsContainer">
+              {[
+                'All',
+                'Website',
+                'Web-App',
+                'React',
+                'Mongo-DB',
+                'Express',
+                'Node',
+                'SASS',
+                'JavaScript',
+                'CSS',
+              ].map((tag) => (
+                <button
+                  className={`filterbutton ${tag} ${
+                    activeTag === tag ? 'active' : ''
+                  }`}
+                  onClick={() => handleTagClick(tag)}
+                >
+                  {tag}
+                </button>
+              ))}
+            </div>
           </div>
 
           {projectdata
@@ -72,7 +90,10 @@ export default function Projects() {
             )
             .map((item) => (
               <div className="projects__contentContainer">
-                <div className="projects__item" key={item.id}>
+                <div
+                  className={`projects__item${isWide[item.id] ? ' wide' : ''}`}
+                  key={item.id}
+                >
                   <div className="text">
                     <h1>{item.name}</h1>
                     <p dangerouslySetInnerHTML={{ __html: item.text }} />
@@ -103,7 +124,18 @@ export default function Projects() {
                         <h3>Tap to unlock swiping</h3>
                       </div>
                     )}
-
+                    <button
+                      className="toggleWideButton"
+                      onClick={() =>
+                        setIsWide({ ...isWide, [item.id]: !isWide[item.id] })
+                      }
+                    >
+                      {isWide[item.id] ? (
+                        <TbViewportNarrow className="toggleIcon" />
+                      ) : (
+                        <TbViewportWide className="toggleIcon" />
+                      )}
+                    </button>
                     <ImageGallery
                       class="imageGallery"
                       items={item.images}

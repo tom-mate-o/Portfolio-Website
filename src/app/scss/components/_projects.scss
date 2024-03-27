@@ -207,6 +207,42 @@
         grid-row: 4/5;
       }
     }
+
+    &.wide {
+      grid-template-columns: 5fr 1fr;
+      grid-template-rows: auto auto auto;
+
+      .text {
+        grid-column: 1/2;
+        grid-row: 2/3;
+        margin-inline-start: 0;
+        margin-inline-end: u.rem(20);
+        margin-block-end: u.rem(15);
+
+        h1 {
+          padding-block-start: u.rem(15);
+        }
+      }
+
+      .antiSwipe {
+        grid-column: 1/3;
+        grid-row: 1/2;
+      }
+
+      .buttons {
+        grid-column: 2/3;
+        grid-row: 2/3;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-end;
+      }
+
+      .tags {
+        grid-column: 1/3;
+        grid-row: 4/5;
+      }
+    }
   }
 }
 
@@ -224,6 +260,50 @@
       background-color: var(--dark-color-mobile-gallery-opacity);
       border-radius: 50%;
       padding: 5px;
+    }
+  }
+
+  .toggleWideButton {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    z-index: 1000;
+    width: u.rem(20);
+    width: clamp(
+      u.rem(20),
+      0.919894366197183rem + 1.4084507042253522vw,
+      u.rem(35)
+    );
+    height: u.rem(20);
+    height: clamp(
+      u.rem(20),
+      0.919894366197183rem + 1.4084507042253522vw,
+      u.rem(35)
+    );
+    background-color: var(--dark-color-mobile-gallery-opacity);
+    border-radius: 50%;
+    padding: 5px;
+    border: none;
+    opacity: 50%;
+    transition: all 0.2s ease-in-out;
+
+    &:hover {
+      opacity: 100%;
+      transform: scale(1.2);
+
+      .toggleIcon {
+        color: var(--secondary-button-bg-hover);
+      }
+    }
+
+    .toggleIcon {
+      color: white;
+      height: 100%;
+      width: 100%;
+    }
+
+    @include u.breakpoint-down('small') {
+      display: none;
     }
   }
 }
