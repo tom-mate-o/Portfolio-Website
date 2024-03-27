@@ -63,7 +63,7 @@ export const projectdata = [
         original: img3lb6,
       },
     ],
-    linkto: 'google.com',
+    linkto: '',
     github: 'https://github.com/tom-mate-o/3-little-Birbs',
     demo: 'https://3littlebirbs.netlify.app/',
   },
