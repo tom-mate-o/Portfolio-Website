@@ -1683,7 +1683,7 @@ a:active {
   width: 100%;
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
   flex-direction: row;
   flex-wrap: wrap;
   gap: 1.25rem;
@@ -1693,14 +1693,18 @@ a:active {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 0.625rem;
-  margin-block-end: 1.875rem;
+  max-width: 100px;
 }
 .about__hobbiesContainer__hobby__image img {
   width: 6.25rem;
   height: 6.25rem;
   border-radius: 50%;
   object-fit: cover;
+  margin-bottom: 0.625rem;
+  transition: all 0.3s ease-in-out;
+}
+.about__hobbiesContainer__hobby__image img:hover {
+  transform: scale(1.1);
 }
 .about__hobbiesContainer__hobby__text {
   text-align: center;

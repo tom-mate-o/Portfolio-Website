@@ -2,6 +2,7 @@ import React from 'react';
 import { useEffect } from 'react';
 import aboutBig from '../img/home_item_images/about_big.jpg';
 import aboutTom from '../img/about_tom.JPG';
+import { hobbies } from '../app/data/aboutdata';
 
 export default function About() {
   useEffect(() => {
@@ -116,35 +117,17 @@ export default function About() {
             Hobbies and things I like
           </h3>
           <div className="about__hobbiesContainer">
-            <div className="about__hobbiesContainer__hobby">
-              <div className="about__hobbiesContainer__hobby__image">
-                {' '}
-                <img src={aboutBig}></img>
+            {hobbies.map((hobbies, index) => (
+              <div className="about__hobbiesContainer__hobby" key={index}>
+                <div className="about__hobbiesContainer__hobby__image">
+                  {' '}
+                  <img src={hobbies.hobbyimage} alt={hobbies.alt}></img>
+                </div>
+                <div className="about__hobbiesContainer__hobby__text">
+                  <p>{hobbies.hobbyname}</p>
+                </div>
               </div>
-              <div className="about__hobbiesContainer__hobby__text">
-                hobbyname
-              </div>
-            </div>
-
-            <div className="about__hobbiesContainer__hobby">
-              <div className="about__hobbiesContainer__hobby__image">
-                {' '}
-                <img src={aboutBig}></img>
-              </div>
-              <div className="about__hobbiesContainer__hobby__text">
-                hobbyname
-              </div>
-            </div>
-
-            <div className="about__hobbiesContainer__hobby">
-              <div className="about__hobbiesContainer__hobby__image">
-                {' '}
-                <img src={aboutBig}></img>
-              </div>
-              <div className="about__hobbiesContainer__hobby__text">
-                hobbyname
-              </div>
-            </div>
+            ))}
           </div>
           <p className="about__footnote">*almost 😛</p>
         </div>

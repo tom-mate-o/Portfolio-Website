@@ -67,7 +67,7 @@
     width: 100%;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
     flex-direction: row;
     flex-wrap: wrap;
     gap: u.rem(20);
@@ -76,8 +76,7 @@
       flex-direction: column;
       justify-content: center;
       align-items: center;
-      gap: u.rem(10);
-      margin-block-end: u.rem(30);
+      max-width: 100px;
 
       &__image {
         img {
@@ -85,6 +84,12 @@
           height: u.rem(100);
           border-radius: 50%;
           object-fit: cover;
+          margin-bottom: u.rem(10);
+          transition: all 0.3s ease-in-out;
+
+          &:hover {
+            transform: scale(1.1);
+          }
         }
       }
 
