@@ -34,7 +34,8 @@
 
   &.secondary {
     padding: u.rem(12);
-    background-color: var(--secondary-button-bg);
+    background-color: hsla(49, 11%, 30%, 0.2);
+    backdrop-filter: blur(5px);
     border: 2px solid var(--secondary-button-border);
     color: var(--secondary-button-text-color);
 

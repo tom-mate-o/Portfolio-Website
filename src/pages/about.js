@@ -146,17 +146,6 @@ export default function About() {
               </div>
             </div>
           </div>
-          <h3 className="singlepage__dividerSubHeadline">Hot Rotation</h3>
-          <iframe
-            style={{ borderRadius: '12px' }}
-            src="https://open.spotify.com/embed/playlist/2UZ6ro8L2RJzJAclydbsXC?utm_source=generator&theme=0"
-            width="100%"
-            height="152"
-            frameBorder="0"
-            allowFullScreen=""
-            allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
-            loading="lazy"
-          ></iframe>
           <p className="about__footnote">*almost 😛</p>
         </div>
       </div>

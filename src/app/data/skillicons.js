@@ -18,6 +18,11 @@ import thinkinginreact from '../../img/skills_icons/thinkinginreact.png';
 import timemanagement from '../../img/skills_icons/timemanagement.png';
 import versioncontrol from '../../img/skills_icons/versioncontrol.png';
 import algorithm from '../../img/skills_icons/algorithm.png';
+import photoshop from '../../img/skills_icons/photoshop.png';
+import vector from '../../img/skills_icons/vector.png';
+import graphic from '../../img/skills_icons/graphic.png';
+import eye from '../../img/skills_icons/eye-care.png';
+import vscode from '../../img/skills_icons/vscode.png';
 
 export const skillicons = {
   api: api,
@@ -40,4 +45,9 @@ export const skillicons = {
   thinkinginreact: thinkinginreact,
   timemanagement: timemanagement,
   versioncontrol: versioncontrol,
+  photoshop: photoshop,
+  vector: vector,
+  graphic: graphic,
+  eye: eye,
+  vscode: vscode,
 };

@@ -66,11 +66,11 @@ export default function Home() {
               }`}
             </p>
             <div className="hero__buttons">
-              <Link to="/contact" className="hero__button button primary">
-                Let's Talk!
-              </Link>
-              <Link to="/skills" className="hero__button button secondary">
+              <Link to="/skills" className="hero__button button primary">
                 My Skillset
+              </Link>
+              <Link to="/contact" className="hero__button button secondary">
+                Let's Talk!
               </Link>
             </div>
           </div>

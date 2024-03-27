@@ -10,6 +10,7 @@ import js from '../img/js.png';
 import html5 from '../img/html5.png';
 import css3 from '../img/css3.png';
 import { skillicons } from '../app/data/skillicons';
+import { furtherSkills, softSkills } from '../app/data/skillsdata';
 
 export default function Skills() {
   useEffect(() => {
@@ -185,170 +186,38 @@ export default function Skills() {
           </div>
           <h3 className="singlepage__dividerSubHeadline">Furthermore</h3>
           <div className="singlepage__furtherSkillsContainer">
-            <div className="singlepage__furtherSkillsContainer__skill">
-              <img
-                className="singlepage__furtherSkillsContainer__skillbadge"
-                src={skillicons.versioncontrol}
-                alt="CSS3"
-              />
-              <p>Version Control with Git and GitHub</p>
-            </div>
-            <div className="singlepage__furtherSkillsContainer__skill">
-              <img
-                className="singlepage__furtherSkillsContainer__skillbadge"
-                src={skillicons.fullstackapp}
-                alt="CSS3"
-              />
-              <p>Developing a Full Stack Web App</p>
-            </div>
-            <div className="singlepage__furtherSkillsContainer__skill">
-              <img
-                className="singlepage__furtherSkillsContainer__skillbadge"
-                src={skillicons.deployment}
-                alt="CSS3"
-              />
-              <p>Deployment with Heroku and Netlify</p>
-            </div>
-            <div className="singlepage__furtherSkillsContainer__skill">
-              <img
-                className="singlepage__furtherSkillsContainer__skillbadge"
-                src={skillicons.api}
-                alt="CSS3"
-              />
-              <p>Creating an API Deployment on RapidAPI</p>
-            </div>
-            <div className="singlepage__furtherSkillsContainer__skill">
-              <img
-                className="singlepage__furtherSkillsContainer__skillbadge"
-                src={skillicons.problemdecomposition}
-                alt="CSS3"
-              />
-              <p>Problem Decomposition</p>
-            </div>
-            <div className="singlepage__furtherSkillsContainer__skill">
-              <img
-                className="singlepage__furtherSkillsContainer__skillbadge"
-                src={skillicons.thinkinginreact}
-                alt="CSS3"
-              />
-              <p>Thinking in React</p>
-            </div>
-            <div className="singlepage__furtherSkillsContainer__skill">
-              <img
-                className="singlepage__furtherSkillsContainer__skillbadge"
-                src={skillicons.asyncprogramming}
-                alt="CSS3"
-              />
-              <p>Functional & Asynchronous Programming</p>
-            </div>
-            <div className="singlepage__furtherSkillsContainer__skill">
-              <img
-                className="singlepage__furtherSkillsContainer__skillbadge"
-                src={skillicons.algorithm}
-                alt="CSS3"
-              />
-              <p>Designing Algorithms</p>
-            </div>
-            <div className="singlepage__furtherSkillsContainer__skill">
-              <img
-                className="singlepage__furtherSkillsContainer__skillbadge"
-                src={skillicons.ideas}
-                alt="CSS3"
-              />
-              <p>Making Ideas Visible on a MIRO Board</p>
-            </div>
-            <div className="singlepage__furtherSkillsContainer__skill">
-              <img
-                className="singlepage__furtherSkillsContainer__skillbadge"
-                src={skillicons.mockup}
-                alt="CSS3"
-              />
-              <p>Designing Mockups with FIGMA</p>
+            <div className="singlepage__furtherSkillsContainer">
+              {furtherSkills.map((skill, index) => (
+                <div
+                  className="singlepage__furtherSkillsContainer__skill"
+                  key={index}
+                >
+                  <img
+                    className="singlepage__furtherSkillsContainer__skillbadge"
+                    src={skill.icon}
+                    alt={skill.alt}
+                  />
+                  <p>{skill.title}</p>
+                </div>
+              ))}
             </div>
           </div>
 
           <h1 class="singlepage__dividerHeadline">Soft Skills</h1>
           <div className="singlepage__furtherSkillsContainer">
-            <div className="singlepage__furtherSkillsContainer__skill">
-              <img
-                className="singlepage__furtherSkillsContainer__skillbadge"
-                src={skillicons.scrum}
-                alt="CSS3"
-              />
-              <p>Project Management with SCRUM</p>
-            </div>
-            <div className="singlepage__furtherSkillsContainer__skill">
-              <img
-                className="singlepage__furtherSkillsContainer__skillbadge"
-                src={skillicons.confidentcommunication}
-                alt="CSS3"
-              />
-              <p>Confident Communication</p>
-            </div>
-            <div className="singlepage__furtherSkillsContainer__skill">
-              <img
-                className="singlepage__furtherSkillsContainer__skillbadge"
-                src={skillicons.growthmindset}
-                alt="CSS3"
-              />
-              <p>Growth Mindset</p>
-            </div>
-            <div className="singlepage__furtherSkillsContainer__skill">
-              <img
-                className="singlepage__furtherSkillsContainer__skillbadge"
-                src={skillicons.focus}
-                alt="CSS3"
-              />
-              <p>Concentration & Focus</p>
-            </div>
-            <div className="singlepage__furtherSkillsContainer__skill">
-              <img
-                className="singlepage__furtherSkillsContainer__skillbadge"
-                src={skillicons.timemanagement}
-                alt="CSS3"
-              />
-              <p>Time Management</p>
-            </div>
-            <div className="singlepage__furtherSkillsContainer__skill">
-              <img
-                className="singlepage__furtherSkillsContainer__skillbadge"
-                src={skillicons.selfmotivation}
-                alt="CSS3"
-              />
-              <p>Self-Motivation</p>
-            </div>
-            <div className="singlepage__furtherSkillsContainer__skill">
-              <img
-                className="singlepage__furtherSkillsContainer__skillbadge"
-                src={skillicons.solutionfocused}
-                alt="CSS3"
-              />
-              <p>Solution Oriented</p>
-            </div>
-            <div className="singlepage__furtherSkillsContainer__skill">
-              <img
-                className="singlepage__furtherSkillsContainer__skillbadge"
-                src={skillicons.sparkingflame}
-                alt="CSS3"
-              />
-              <p>Sparking the Flame in Others</p>
-            </div>
-            <div className="singlepage__furtherSkillsContainer__skill">
-              <img
-                className="singlepage__furtherSkillsContainer__skillbadge"
-                src={skillicons.flexible}
-                alt="CSS3"
-              />
-              <p>Flexibility</p>
-            </div>
-            <div className="singlepage__furtherSkillsContainer__skill">
-              <img
-                className="singlepage__furtherSkillsContainer__skillbadge"
-                src={skillicons.adaptive}
-                alt="CSS3"
-              />
-              <p>Adaptiveness</p>
-            </div>
+            {softSkills.map((skill, index) => (
+              <div
+                className="singlepage__furtherSkillsContainer__skill"
+                key={index}
+              >
+                <img
+                  className="singlepage__furtherSkillsContainer__skillbadge"
+                  src={skill.icon}
+                  alt={skill.alt}
+                />
+                <p>{skill.title}</p>
+              </div>
+            ))}
           </div>
           <div className="singlepage__furtherSkillsContainer__iconCredit">
             <a

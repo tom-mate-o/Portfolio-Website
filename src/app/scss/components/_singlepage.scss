@@ -105,6 +105,11 @@
     &__skillbadge {
       height: auto;
       width: u.rem(100);
+      transition: all 0.3s ease-in-out;
+
+      &:hover {
+        transform: scale(1.1);
+      }
     }
 
     &__image {
@@ -155,7 +160,12 @@
       height: auto;
       width: u.rem(80);
       margin-block-end: u.rem(10);
-      filter: sepia(60%);
+      filter: sepia(100%);
+      transition: all 0.3s ease-in-out;
+
+      &:hover {
+        transform: scale(1.1);
+      }
     }
 
     &__iconCredit {

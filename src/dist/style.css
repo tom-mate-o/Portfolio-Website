@@ -155,7 +155,8 @@ a:active {
 }
 .button.secondary {
   padding: 0.75rem;
-  background-color: var(--secondary-button-bg);
+  background-color: hsla(49, 11%, 30%, 0.2);
+  backdrop-filter: blur(5px);
   border: 2px solid var(--secondary-button-border);
   color: var(--secondary-button-text-color);
 }
@@ -820,6 +821,10 @@ a:active {
 .singlepage__skillcontainer__skillbadge {
   height: auto;
   width: 6.25rem;
+  transition: all 0.3s ease-in-out;
+}
+.singlepage__skillcontainer__skillbadge:hover {
+  transform: scale(1.1);
 }
 .singlepage__skillcontainer__image {
   display: flex;
@@ -864,7 +869,11 @@ a:active {
   height: auto;
   width: 5rem;
   margin-block-end: 0.625rem;
-  filter: sepia(60%);
+  filter: sepia(100%);
+  transition: all 0.3s ease-in-out;
+}
+.singlepage__furtherSkillsContainer__skillbadge:hover {
+  transform: scale(1.1);
 }
 .singlepage__furtherSkillsContainer__iconCredit {
   text-align: center;
