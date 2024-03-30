@@ -1,3 +1,7 @@
+import potvis from '../../img/art_images/potvis.jpg';
+import puffin from '../../img/art_images/puffin.JPG';
+import lepelaars from '../../img/art_images/lepelaars.jpg';
+import miriamlogo from '../../img/art_images/miriamlogo.JPG';
 import tomkra_art001 from '../../img/art_images/tomkra_art001.jpg';
 import tomkra_art002 from '../../img/art_images/tomkra_art002.jpg';
 import tomkra_art003 from '../../img/art_images/tomkra_art003.jpg';
@@ -24,7 +28,6 @@ import tomkra_art023 from '../../img/art_images/tomkra_art023.jpg';
 import tomkra_art024 from '../../img/art_images/tomkra_art024.jpg';
 import tomkra_art025 from '../../img/art_images/tomkra_art025.jpg';
 import tomkra_art026 from '../../img/art_images/tomkra_art026.jpg';
-import tomkra_art027 from '../../img/art_images/tomkra_art027.jpg';
 import tomkra_art028 from '../../img/art_images/tomkra_art028.jpg';
 import tomkra_art029 from '../../img/art_images/tomkra_art029.jpg';
 import tomkra_art030 from '../../img/art_images/tomkra_art030.jpg';
@@ -35,18 +38,23 @@ import tomkra_art034 from '../../img/art_images/tomkra_art034.jpg';
 import tomkra_art035 from '../../img/art_images/tomkra_art035.jpg';
 import tomkra_art036 from '../../img/art_images/tomkra_art036.jpg';
 import tomkra_art037 from '../../img/art_images/tomkra_art037.jpg';
-import tomkra_art038 from '../../img/art_images/tomkra_art038.jpg';
-import tomkra_art039 from '../../img/art_images/tomkra_art039.jpg';
+
 import tomkra_art040 from '../../img/art_images/tomkra_art040.jpg';
 import tomkra_art041 from '../../img/art_images/tomkra_art041.jpg';
 import tomkra_art042 from '../../img/art_images/tomkra_art042.jpg';
 import tomkra_art043 from '../../img/art_images/tomkra_art043.jpg';
 import tomkra_art044 from '../../img/art_images/tomkra_art044.jpg';
 import tomkra_art045 from '../../img/art_images/tomkra_art045.jpg';
-import tomkra_art046 from '../../img/art_images/tomkra_art046.jpg';
+
 import tomkra_art047 from '../../img/art_images/tomkra_art047.JPG';
 
 export const images = [
+  {
+    src: puffin,
+    width: 451,
+    height: 600,
+    caption: 'Acrylic Painting of a Puffin as a Van Gogh Self Portrait.',
+  },
   {
     src: tomkra_art047,
     width: 800,
@@ -94,6 +102,12 @@ export const images = [
     width: 450,
     height: 600,
     caption: 'A Crab as Santa in Vintage Cartoon Style',
+  },
+  {
+    src: miriamlogo,
+    width: 495,
+    height: 491,
+    caption: 'A Logo for Oceanographer Miriam Sterl',
   },
   {
     src: tomkra_art008,
@@ -199,6 +213,12 @@ export const images = [
     caption: 'A Cat in a Spacesuit. For Inktober.',
   },
   {
+    src: potvis,
+    width: 800,
+    height: 600,
+    caption: 'A Sektchbook Drawing in Guoache of a Spermwhale.',
+  },
+  {
     src: tomkra_art025,
     width: 800,
     height: 533,
@@ -209,12 +229,6 @@ export const images = [
     width: 600,
     height: 600,
     caption: 'A whistling Hammer in Vintage Cartoon Style',
-  },
-  {
-    src: tomkra_art027,
-    width: 450,
-    height: 600,
-    caption: 'Majin Boo from Dragonball for Inktober',
   },
   {
     src: tomkra_art045,
@@ -283,18 +297,6 @@ export const images = [
     caption: 'A Skelleton greeting. For Inktober.',
   },
   {
-    src: tomkra_art038,
-    width: 424,
-    height: 600,
-    caption: 'A Bear with a Pearl-Earring. Digital. For a GameJam.',
-  },
-  {
-    src: tomkra_art039,
-    width: 800,
-    height: 566,
-    caption: 'A Logo for a GameJam.',
-  },
-  {
     src: tomkra_art040,
     width: 800,
     height: 571,
@@ -305,6 +307,12 @@ export const images = [
     width: 429,
     height: 600,
     caption: 'A Razor in Vintage Cartoon Style. For Inktober.',
+  },
+  {
+    src: lepelaars,
+    width: 800,
+    height: 600,
+    caption: 'A Gouache Painting in Vintage Cartoon Style of Spoonbills.',
   },
   {
     src: tomkra_art042,
@@ -323,12 +331,5 @@ export const images = [
     width: 800,
     height: 570,
     caption: 'Sketchbook Drawing of 3 teeth. For Inktober.',
-  },
-
-  {
-    src: tomkra_art046,
-    width: 450,
-    height: 600,
-    caption: 'Werewolf for Inktober.',
   },
 ];

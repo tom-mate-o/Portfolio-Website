@@ -3,7 +3,7 @@ import { hobbieimages } from '../data/hobbieimages';
 export const hobbies = [
   {
     hobbyname: 'Running',
-    hobbyimage: hobbieimages.placeholder,
+    hobbyimage: hobbieimages.running,
     alt: 'Running',
   },
   {
@@ -28,22 +28,22 @@ export const hobbies = [
   },
   {
     hobbyname: 'Cooking',
-    hobbyimage: hobbieimages.placeholder,
+    hobbyimage: hobbieimages.cooking,
     alt: 'Cooking',
   },
   {
     hobbyname: 'Drawing',
-    hobbyimage: hobbieimages.placeholder,
+    hobbyimage: hobbieimages.drawing,
     alt: 'Drawing',
   },
   {
     hobbyname: 'Video Games',
-    hobbyimage: hobbieimages.placeholder,
+    hobbyimage: hobbieimages.gaming,
     alt: 'Video Games',
   },
   {
     hobbyname: 'Stunning Landscapes',
-    hobbyimage: hobbieimages.placeholder,
+    hobbyimage: hobbieimages.landscapes,
     alt: 'Stunning Landscapes',
   },
   {
@@ -53,17 +53,17 @@ export const hobbies = [
   },
   {
     hobbyname: 'Coffee & Tea',
-    hobbyimage: hobbieimages.placeholder,
+    hobbyimage: hobbieimages.coffee,
     alt: 'Coffee & Tea',
   },
   {
     hobbyname: 'Reading',
-    hobbyimage: hobbieimages.placeholder,
+    hobbyimage: hobbieimages.reading,
     alt: 'Reading',
   },
   {
     hobbyname: 'Indie Music',
-    hobbyimage: hobbieimages.placeholder,
+    hobbyimage: hobbieimages.indie,
     alt: 'Indie Music',
   },
   {
