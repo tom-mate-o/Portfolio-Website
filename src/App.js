@@ -41,62 +41,62 @@ export default function App() {
 
   return (
     <BrowserRouter>
-      <Link to="#main" class="visually-hidden">
+      <Link to="#main" className="visually-hidden">
         Skip to main content
       </Link>
-      <header class="topnav">
-        <h2 class="visually-hidden">Header</h2>
-        <div class="wrapper topnav__wrapper">
-          <div class="topnav__leftcolumn">
-            <Link to="/" class="topnav__homelink hover-fade">
-              <Logo class="topnav__logo" />
+      <header className="topnav">
+        <h2 className="visually-hidden">Header</h2>
+        <div className="wrapper topnav__wrapper">
+          <div className="topnav__leftcolumn">
+            <Link to="/" className="topnav__homelink hover-fade">
+              <Logo className="topnav__logo" />
             </Link>
           </div>
-          <div class="topnav__rightcolumn">
-            <h1 class="topnav__title">Tom Kra</h1>
+          <div className="topnav__rightcolumn">
+            <h1 className="topnav__title">Tom Kra</h1>
             <nav>
-              <ul class="topnav__links">
+              <ul className="topnav__links">
                 <Hamburger
-                  class="topnav__hamburger"
+                  className="topnav__hamburger"
                   style={{ fill: 'var(--text-color-light)' }}
                   onClick={handleHamburgerClick}
                 />
                 <div
-                  class="topnav__hamburgerwrapper"
+                  className="topnav__hamburgerwrapper"
                   onClick={handleHamburgerClick}
                 ></div>
-                <li class="topnav__item">
-                  <Link to="/" class="topnav__link">
+                <li className="topnav__item">
+                  <Link to="/" className="topnav__link">
                     Home
                   </Link>
                 </li>
-                <li class="topnav__item">
-                  <Link to="/aboutme" class="topnav__link">
+                <li className="topnav__item">
+                  <Link to="/aboutme" className="topnav__link">
                     About Me
                   </Link>
                 </li>
-                <li class="topnav__item">
-                  <Link to="/skills" class="topnav__link">
+                <li className="topnav__item">
+                  <Link to="/skills" className="topnav__link">
                     Skills
                   </Link>
                 </li>
-                <li class="topnav__item">
-                  <Link to="/projects" class="topnav__link">
+                <li className="topnav__item">
+                  <Link to="/projects" className="topnav__link">
                     Projects
                   </Link>
                 </li>
-                <li class="topnav__item">
-                  <Link to="/photos" class="topnav__link">
+                <li className="topnav__item">
+                  <Link to="/photos" className="topnav__link">
                     Photos
                   </Link>
                 </li>
-                <li class="topnav__item">
-                  <Link to="/art" class="topnav__link">
+                <li className="topnav__item">
+                  <Link to="/art" className="topnav__link">
                     Art
                   </Link>
                 </li>
-                <li class="topnav__item">
-                  <Link to="/contact" class="topnav__link">
+                <li className="topnav__item">
+                  <Link to="/contact" className="topnav__link">
                     Contact
                   </Link>
                 </li>
@@ -105,47 +105,47 @@ export default function App() {
           </div>
         </div>
 
-        <div class={`mobilenav ${isMobileNavVisible ? '' : 'hidden'}`}>
+        <div className={`mobilenav ${isMobileNavVisible ? '' : 'hidden'}`}>
           <nav>
             <Close
-              class="mobilenav__close"
+              className="mobilenav__close"
               style={{ fill: 'var(--text-color-light)' }}
               onClick={handleCloseClick}
             />
 
-            <ul class="mobilenav__links">
-              <li class="mobilenav__item" onClick={handleCloseClick}>
-                <Link to="/" class="mobilenav__link">
+            <ul className="mobilenav__links">
+              <li className="mobilenav__item" onClick={handleCloseClick}>
+                <Link to="/" className="mobilenav__link">
                   Home
                 </Link>
               </li>
-              <li class="mobilenav__item" onClick={handleCloseClick}>
-                <Link to="/aboutme" class="mobilenav__link">
+              <li className="mobilenav__item" onClick={handleCloseClick}>
+                <Link to="/aboutme" className="mobilenav__link">
                   About Me
                 </Link>
               </li>
-              <li class="mobilenav__item" onClick={handleCloseClick}>
-                <Link to="/skills" class="mobilenav__link">
+              <li className="mobilenav__item" onClick={handleCloseClick}>
+                <Link to="/skills" className="mobilenav__link">
                   Skills
                 </Link>
               </li>
-              <li class="mobilenav__item" onClick={handleCloseClick}>
-                <Link to="/projects" class="mobilenav__link">
+              <li className="mobilenav__item" onClick={handleCloseClick}>
+                <Link to="/projects" className="mobilenav__link">
                   Projects
                 </Link>
               </li>
-              <li class="mobilenav__item" onClick={handleCloseClick}>
-                <Link to="/photos" class="mobilenav__link">
+              <li className="mobilenav__item" onClick={handleCloseClick}>
+                <Link to="/photos" className="mobilenav__link">
                   Photos
                 </Link>
               </li>
-              <li class="mobilenav__item" onClick={handleCloseClick}>
-                <Link to="/art" class="mobilenav__link">
+              <li className="mobilenav__item" onClick={handleCloseClick}>
+                <Link to="/art" className="mobilenav__link">
                   Art
                 </Link>
               </li>
-              <li class="mobilenav__item" onClick={handleCloseClick}>
-                <Link to="/contact" class="mobilenav__link">
+              <li className="mobilenav__item" onClick={handleCloseClick}>
+                <Link to="/contact" className="mobilenav__link">
                   Contact
                 </Link>
               </li>
@@ -164,58 +164,54 @@ export default function App() {
           <Route path="/contact" element={<Contact />} />
           <Route path="/impressum" element={<Impressum />} />
         </Routes>
-        <footer class="footer">
-          <div class="footer__collumn1">
-            <Link to="/" class="topnav__homelink hover-fade">
-              <Logo class="footer__logo" />
+        <footer className="footer">
+          <div className="footer__collumn1">
+            <Link to="/" className="topnav__homelink hover-fade">
+              <Logo className="footer__logo" />
             </Link>
             <p>©2024 Tom Kra</p>
           </div>
-          <div class="footer__collumn2">
+          <div className="footer__collumn2">
             <ul>
               <li>
                 <a
                   href="https://github.com/tom-mate-o"
                   target="_blank"
-                  class="footer__link"
+                  className="footer__link"
                 >
-                  <GitHub class="footer__socialicon" />
+                  <GitHub className="footer__socialicon" />
                   GitHub
-                  <Extern class="footer__externicon" />
+                  <Extern className="footer__externicon" />
                 </a>
               </li>
               <li>
                 <a
                   href="https://mastodon.art/@tomkra"
                   target="_blank"
-                  class="footer__link"
+                  className="footer__link"
                 >
-                  <Mastdodon class="footer__socialicon" />
+                  <Mastdodon className="footer__socialicon" />
                   Mastodon
-                  <Extern class="footer__externicon" />
+                  <Extern className="footer__externicon" />
                 </a>
               </li>
             </ul>
           </div>
-          <div class="footer__collumn3">
+          <div className="footer__collumn3">
             <ul>
               <li>
-                <a href="" class="footer__link">
-                  <Link to="/contact" class="footer__link">
-                    Contact
-                  </Link>
-                </a>
+                <Link to="/contact" className="footer__link">
+                  Contact
+                </Link>
               </li>
             </ul>
           </div>
-          <div class="footer__collumn4">
+          <div className="footer__collumn4">
             <ul>
               <li>
-                <a href="" class="footer__link">
-                  <Link to="/impressum" class="footer__link">
-                    Impressum
-                  </Link>
-                </a>
+                <Link to="/impressum" className="footer__link">
+                  Impressum
+                </Link>
               </li>
             </ul>
           </div>

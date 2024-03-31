@@ -87,7 +87,6 @@ p {
 a,
 a:visited,
 a:active {
-  line-height: auto;
   text-decoration: none;
 }
 
@@ -862,7 +861,6 @@ a:active {
   text-align: center;
 }
 .singlepage__furtherSkillsContainer__skill p {
-  max-width: auto;
   font-weight: 400;
 }
 .singlepage__furtherSkillsContainer__skillbadge {
@@ -980,7 +978,7 @@ a:active {
 }
 .image-gallery-top-nav[disabled],
 .image-gallery-bottom-nav[disabled] {
-  cursor: disabled;
+  cursor: not-allowed;
   opacity: 0.6;
   pointer-events: none;
 }
@@ -1020,7 +1018,7 @@ a:active {
 }
 .image-gallery-left-nav[disabled],
 .image-gallery-right-nav[disabled] {
-  cursor: disabled;
+  cursor: not-allowed;
   opacity: 0.6;
   pointer-events: none;
 }
@@ -1383,7 +1381,7 @@ a:active {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  align-items: left;
+  align-items: flex-start;
   color: var(--content-text-color-dark);
   text-align: left;
 }

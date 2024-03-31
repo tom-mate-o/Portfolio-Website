@@ -27,26 +27,28 @@ export default function About() {
             </div>
             <div className="about__profilecontainer__text">
               <table>
-                <tr>
-                  <td>Name</td>
-                  <td>Thomas Kranawetter</td>
-                </tr>
-                <tr>
-                  <td>Age</td>
-                  <td>32</td>
-                </tr>
-                <tr>
-                  <td>Pronouns</td>
-                  <td>he/him</td>
-                </tr>
-                <tr>
-                  <td>Nationality</td>
-                  <td>Austrian</td>
-                </tr>
-                <tr>
-                  <td>Languages</td>
-                  <td>German (native), English (C1), Dutch (B1)*</td>
-                </tr>
+                <tbody>
+                  <tr>
+                    <td>Name</td>
+                    <td>Thomas Kranawetter</td>
+                  </tr>
+                  <tr>
+                    <td>Age</td>
+                    <td>32</td>
+                  </tr>
+                  <tr>
+                    <td>Pronouns</td>
+                    <td>he/him</td>
+                  </tr>
+                  <tr>
+                    <td>Nationality</td>
+                    <td>Austrian</td>
+                  </tr>
+                  <tr>
+                    <td>Languages</td>
+                    <td>German (native), English (C1), Dutch (B1)*</td>
+                  </tr>
+                </tbody>
               </table>
             </div>
           </div>

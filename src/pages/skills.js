@@ -38,7 +38,7 @@ export default function Skills() {
             Here's a glimpse into my toolbox regarding hard- and soft skills:
           </p>
 
-          <h1 class="singlepage__dividerHeadline">Hard Skills</h1>
+          <h1 className="singlepage__dividerHeadline">Hard Skills</h1>
           <div className="singlepage__skillcontainer">
             <div className="singlepage__skillcontainer__image">
               <img
@@ -203,7 +203,7 @@ export default function Skills() {
             </div>
           </div>
 
-          <h1 class="singlepage__dividerHeadline">Soft Skills</h1>
+          <h1 className="singlepage__dividerHeadline">Soft Skills</h1>
           <div className="singlepage__furtherSkillsContainer">
             {softSkills.map((skill, index) => (
               <div

@@ -114,7 +114,7 @@ $ig-shadow: 0 2px 2px lighten($ig-black, 10%);
   }
 
   &[disabled] {
-    cursor: disabled;
+    cursor: not-allowed;
     opacity: 0.6;
     pointer-events: none;
   }
@@ -154,7 +154,7 @@ $ig-shadow: 0 2px 2px lighten($ig-black, 10%);
   }
 
   &[disabled] {
-    cursor: disabled;
+    cursor: not-allowed;
     opacity: 0.6;
     pointer-events: none;
   }

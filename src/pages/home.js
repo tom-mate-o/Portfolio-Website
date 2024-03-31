@@ -92,8 +92,8 @@ export default function Home() {
         </div>
       </div>
       {homedata.map((item) => (
-        <div className="homeitem__contentContainer">
-          <div className={`homeitem__${item.class}`} key={item.id}>
+        <div className="homeitem__contentContainer" key={item.id}>
+          <div className={`homeitem__${item.class}`}>
             <div className="text">
               <p dangerouslySetInnerHTML={{ __html: item.text }} />
             </div>

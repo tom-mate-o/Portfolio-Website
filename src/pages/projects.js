@@ -77,6 +77,7 @@ export default function Projects() {
                     activeTag === tag ? 'active' : ''
                   }`}
                   onClick={() => handleTagClick(tag)}
+                  key={tag}
                 >
                   {tag}
                 </button>
@@ -89,7 +90,7 @@ export default function Projects() {
               item.tags.some((tag) => selectedTags.includes(tag))
             )
             .map((item) => (
-              <div className="projects__contentContainer">
+              <div className="projects__contentContainer" key={item.id}>
                 <div
                   className={`projects__item${isWide[item.id] ? ' wide' : ''}`}
                   key={item.id}
@@ -137,7 +138,7 @@ export default function Projects() {
                       )}
                     </button>
                     <ImageGallery
-                      class="imageGallery"
+                      className="imageGallery"
                       items={item.images}
                       showFullscreenButton={false}
                       showBullets={true}
@@ -149,7 +150,7 @@ export default function Projects() {
                   </div>
                   <div className="buttons">
                     {item.linkto ? (
-                      <Link to={item.linkto} class="">
+                      <Link to={item.linkto} className="">
                         <div className="morebutton">...more!</div>
                       </Link>
                     ) : null}
@@ -158,25 +159,25 @@ export default function Projects() {
                         <Link
                           to={item.github}
                           target="_blank"
-                          class="icon github"
+                          className="icon github"
                         >
-                          <GitHubLink class="" />
+                          <GitHubLink className="" />
                         </Link>
                       ) : null}
                       {item.demo ? (
                         <Link
                           to={item.demo}
                           target="_blank"
-                          class="icon website"
+                          className="icon website"
                         >
-                          <WebsiteLink class="" />
+                          <WebsiteLink className="" />
                         </Link>
                       ) : null}
                     </div>
                   </div>
                   <div className="tags">
-                    {item.tags.map((tag) => (
-                      <div className={`tagbox ${tag}`}>
+                    {item.tags.map((tag, index) => (
+                      <div className={`tagbox ${tag}`} key={index + tag}>
                         <p>{tag}</p>
                       </div>
                     ))}
