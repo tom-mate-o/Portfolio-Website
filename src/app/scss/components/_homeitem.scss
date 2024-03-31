@@ -50,6 +50,7 @@
         grid-column: 2/3;
         grid-row: 1/2;
         padding-inline: u.rem(40);
+        padding-block: u.rem(10);
       }
 
       .image {
@@ -85,7 +86,7 @@
       justify-content: center;
       align-items: center;
       padding-inline: u.rem(20);
-      padding-block: u.rem(25);
+      padding-block: u.rem(20);
 
       p {
         color: var(--content-text-color-light);
@@ -113,6 +114,7 @@
         grid-column: 1/2;
         grid-row: 1/2;
         padding-inline: u.rem(40);
+        padding-block: u.rem(15);
       }
 
       .image {

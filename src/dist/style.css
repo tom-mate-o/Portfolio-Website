@@ -550,6 +550,7 @@ a:active {
     grid-column: 2/3;
     grid-row: 1/2;
     padding-inline: 2.5rem;
+    padding-block: 0.625rem;
   }
   .homeitem__light .image {
     grid-column: 1/2;
@@ -580,7 +581,7 @@ a:active {
   justify-content: center;
   align-items: center;
   padding-inline: 1.25rem;
-  padding-block: 1.5625rem;
+  padding-block: 1.25rem;
 }
 .homeitem__dark .text p {
   color: var(--content-text-color-light);
@@ -606,6 +607,7 @@ a:active {
     grid-column: 1/2;
     grid-row: 1/2;
     padding-inline: 2.5rem;
+    padding-block: 0.9375rem;
   }
   .homeitem__dark .image {
     grid-column: 2/3;

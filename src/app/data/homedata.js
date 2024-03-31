@@ -9,7 +9,7 @@ export const homedata = [
     id: 1,
     class: 'light',
     name: 'About Me',
-    text: 'Coming from the high mountains of Austria, I washed ashore on an island in the Dutch North Sea. Not only did I switch my Apfelstrudel for Appeltaart - I also switched my profession from being a metrologist in the automotive industry to following my passion for creating awesome things on the Web.',
+    text: 'Coming from the high mountains of Austria, I washed up on an North-Sea Island. Not only did I switch my Apfelstrudel for Appeltaart - I also switched my profession from being a metrologist in the automotive industry to following my passion for creating awesome things on the Web.',
     image: about,
     linkto: '/aboutme',
   },
