@@ -1713,4 +1713,62 @@ a:active {
   text-align: right;
   font-size: 0.625rem;
   color: grey;
+}
+
+.form-row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 0.9375rem;
+  width: 100%;
+}
+
+h3 {
+  margin-block-end: 0.9375rem;
+  color: var(--text-color-dark);
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.9375rem;
+  width: 100%;
+}
+
+.col {
+  flex: 1;
+}
+
+input {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 10px;
+  border: 1px solid var(--dark-bg);
+  font-family: "Inria Serif", serif;
+}
+input:focus {
+  outline: none;
+  border-color: var(--dark-bg);
+}
+
+textarea {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 10px;
+  border: 1px solid var(--dark-bg);
+  font-family: "Inria Serif", serif;
+}
+textarea:focus {
+  outline: none;
+  border-color: var(--dark-bg);
+}
+
+button {
+  padding: 10px;
+  border: none;
+  font-family: "Inria Serif", serif;
+  align-self: flex-end;
+}
+button:hover {
+  cursor: pointer;
 }/*# sourceMappingURL=style.css.map */

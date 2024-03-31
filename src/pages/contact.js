@@ -19,7 +19,50 @@ export default function Contact() {
           <h1 className="singlepage__headerTitle">Contact</h1>
         </div>
         <div className="singlepage__content">
-          <p>Contact</p>
+          <div className="container">
+            <h3 className="">Drop me a Message</h3>
+            <form
+              target="_blank"
+              action="https://formsubmit.co/mailtomkra@duck.com"
+              method="POST"
+            >
+              <div className="form-group">
+                <div className="form-row">
+                  <div className="col">
+                    <input
+                      type="text"
+                      name="name"
+                      className="form-control"
+                      placeholder="Full Name"
+                      required
+                    />
+                  </div>
+                  <div className="col">
+                    <input
+                      type="email"
+                      name="email"
+                      className="form-control"
+                      placeholder="Email Address"
+                      required
+                    />
+                  </div>
+                </div>
+              </div>
+              <div className="form-group">
+                <textarea
+                  placeholder="Your Message"
+                  className="form-control"
+                  name="message"
+                  rows="10"
+                  required
+                ></textarea>
+              </div>
+
+              <button type="submit" className="hero__button button primary">
+                Submit
+              </button>
+            </form>
+          </div>
         </div>
       </div>
     </div>
