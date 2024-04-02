@@ -1579,6 +1579,9 @@ a:active {
 .antiSwipe__div {
   display: flex;
 }
+.antiSwipe__div h3 {
+  color: white;
+}
 @media (min-width: 43.75em) {
   .antiSwipe__div {
     display: none;

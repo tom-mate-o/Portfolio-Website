@@ -250,6 +250,10 @@
   &__div {
     display: flex;
 
+    h3 {
+      color: white;
+    }
+
     @include u.breakpoint('medium') {
       display: none;
     }
