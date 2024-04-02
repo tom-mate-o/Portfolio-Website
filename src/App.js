@@ -15,6 +15,7 @@ import Photos from './pages/photos';
 import Art from './pages/art';
 import Contact from './pages/contact';
 import Impressum from './pages/impressum';
+import Privacydisclaimer from './pages/privacydisclaimer';
 
 import { ReactComponent as Mastdodon } from './img/mastodon.svg';
 import { ReactComponent as GitHub } from './img/github.svg';
@@ -163,6 +164,7 @@ export default function App() {
           <Route path="/art" element={<Art />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/impressum" element={<Impressum />} />
+          <Route path="/privacydisclaimer" element={<Privacydisclaimer />} />
         </Routes>
         <footer className="footer">
           <div className="footer__collumn1">
@@ -211,6 +213,11 @@ export default function App() {
               <li>
                 <Link to="/impressum" className="footer__link">
                   Impressum
+                </Link>
+              </li>
+              <li>
+                <Link to="/privacydisclaimer" className="footer__link">
+                  Privacy + Disclaimer
                 </Link>
               </li>
             </ul>

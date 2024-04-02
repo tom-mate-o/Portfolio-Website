@@ -56,6 +56,10 @@
       padding-inline: u.rem(50);
       padding-block: u.rem(50);
     }
+
+    h2 {
+      color: var(--content-text-color-dark);
+    }
   }
 
   &__filterContainer {

@@ -60,13 +60,13 @@ export default function About() {
             Computers and the internet have fascinated me since the first PC
             with an incredible 4GB hard drive and a large CRT monitor stood in
             our living room. I still remember the time when modems screamed in
-            pain as they dialled into the internet, charging per minute, and my
+            pain as they dialled into the internet, charging per minute. And my
             grandma would get upset if the phone line was busy on Sunday
             evenings because her nephew was surfing the web.
           </p>
 
           <p className="about__text">
-            Even back then, I built websites for friends and the big band I
+            Even back then, I built websites for friends and the Big Band I
             played in, which received a new redesign every month. I taught
             myself HTML and CSS by studying the source code of other websites.
           </p>
@@ -104,7 +104,7 @@ export default function About() {
             to completely switch fields, through educational leave within a
             year, pursuing my passion, which I had since my teenage years. Thus,
             I started my journey to become a Junior Full Stack Developer through
-            various online courses.
+            various courses.
           </p>
 
           <p className="about__text">

@@ -22,7 +22,6 @@ export default function Contact() {
           <div className="container">
             <h3 className="">Drop me a Message</h3>
             <form
-              target="_blank"
               action="https://formsubmit.co/mailtomkra@duck.com"
               method="POST"
             >
@@ -48,6 +47,7 @@ export default function Contact() {
                   </div>
                 </div>
               </div>
+
               <div className="form-group">
                 <textarea
                   placeholder="Your Message"
@@ -58,6 +58,13 @@ export default function Contact() {
                 ></textarea>
               </div>
 
+              <div className="privacy">
+                <input type="checkbox" id="privacy" name="privacy" required />
+                <label htmlFor="privacy">
+                  I have read and accept the{' '}
+                  <a href="/privacydisclaimer">Privacy Policy</a>.
+                </label>
+              </div>
               <button type="submit" className="hero__button button primary">
                 Submit
               </button>

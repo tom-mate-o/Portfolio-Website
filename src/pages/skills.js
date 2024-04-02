@@ -31,7 +31,7 @@ export default function Skills() {
         <div className="singlepage__content">
           <p className="singlepage__skillcontainer__introtext">
             As a Full Stack Web Developer, I bring a broad range of abilities to
-            the table, which helps me to create reliable, accessible and stylish
+            the table, which helps me create reliable, accessible, and stylish
             web applications.
             <br />
             <br />
@@ -87,7 +87,7 @@ export default function Skills() {
               <h2>React</h2>
               <p>
                 React is my go-to framework for building dynamic and
-                user-friendly web apps. I'm very confident within is ecosystem
+                user-friendly web apps. I'm very confident within its ecosystem
                 using hooks, variables, the component-based architecture, and
                 also styling them within styled-components.
               </p>
@@ -160,8 +160,8 @@ export default function Skills() {
               <h2>HTML5</h2>
               <p>
                 HTML5 is the cornerstone of my web page creation, ensuring they
-                well-organized structured and accessible for users and
-                screenreaders .
+                are well organised, structured, and accessible for users and
+                screenreaders.
               </p>
             </div>
           </div>
@@ -177,10 +177,10 @@ export default function Skills() {
             <div className="singlepage__skillcontainer__text">
               <h2>CSS3</h2>
               <p>
-                It's great fun for me to turn blank, unstylized- into
-                nice-looking websites. Making them look great and responsive on
-                all devices. And there is no better feeling than when it matches
-                100% with the design file.
+                It's great fun for me to turn blank and unstylized- into
+                nice-looking websites. Making them responsive and also look good
+                on all devices. And there is no better feeling than when it
+                matches 100% with the design file in the end.
               </p>
             </div>
           </div>

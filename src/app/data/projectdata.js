@@ -45,7 +45,7 @@ export const projectdata = [
       'Node',
       'CSS',
     ],
-    text: '"3 Little Birbs" was my final project for my Full Stack class at codingschule.de. It is built as a Full Stack Single Page Web Application. The idea was to build a wholesome Social Media App, where you can write down 3 good things that happened to you today, and send them to your friends or out into the wild, to a stranger...',
+    text: '"3 Little Birbs" was my final project for my Full Stack class at codingschule.de. It is built as a Full Stack Single Page Web Application. The idea was to build a wholesome Social Media App, where you can write down 3 good things that happened to you today, and send them to your friends or out into the wild, to a stranger.',
     images: [
       {
         original: img3lb1,
@@ -102,7 +102,7 @@ export const projectdata = [
       'Node',
       'CSS',
     ],
-    text: 'Gimme5 was a social media app project for Codingschule.de. I built it together with my colleague Kathrin as a full-stack, single-page web application. The idea was to build platform where you could share your five favourite things with the world. The app has a login and registration system, a feed where you can see all the posts of the users you follow, a profile page where you can see all your own posts and edit your profile, and a like and comment system.',
+    text: 'Gimme5 was a social media app project for Codingschule.de. I built it together with my colleague Kathrin as a full-stack, single-page web application. The idea was to build a platform where you can share your five favourite things with the world. The app has a login and registration system, a feed where you can see all the posts of the users you follow, a profile page where you can see all your own posts and edit your profile, and a like and comment system.',
     images: [
       {
         original: imggimme5_1,
@@ -153,7 +153,7 @@ export const projectdata = [
 
     name: 'X-Dream-Fit',
     tags: ['All', 'Website', 'React', 'JavaScript', 'Node', 'SASS', 'CSS'],
-    text: 'Website for Fitness, Pilates Coach, and Freediving Instructor Susi Roth. The site is currently under development and aims to provide an overview of her entire range of services. For the CMS, I used Front-Aid so that Susi can easily edit the content herself. In the future, there will be a member area with personalised training plans. The website is built with React and Node.js. The design was created in Figma, and the layout was built with SASS.',
+    text: 'Website for Fitness-, Pilates Coach, and Freediving Instructor Susi Roth. The site is currently under development and aims to provide an overview of her entire range of services. For the CMS, I used Front-Aid so that Susi can easily edit the content herself. In the future, there will be a member area with personalised training plans. The website is built with React and Node.js. The design was created in Figma, and the layout was built with SASS.',
     images: [
       {
         original: xdream,
