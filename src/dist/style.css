@@ -1802,4 +1802,11 @@ button:hover {
 }
 .privacy label {
   width: auto;
+}
+
+.projectdetail ul {
+  color: var(--content-text-color-dark);
+}
+.projectdetail .projects__contentContainer {
+  padding-block-start: 0.625rem;
 }/*# sourceMappingURL=style.css.map */

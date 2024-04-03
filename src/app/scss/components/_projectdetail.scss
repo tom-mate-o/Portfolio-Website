@@ -1,0 +1,11 @@
+@use '../util/' as u;
+
+.projectdetail {
+  ul {
+    color: var(--content-text-color-dark);
+  }
+
+  .projects__contentContainer {
+    padding-block-start: u.rem(10);
+  }
+}
