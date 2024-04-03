@@ -212,12 +212,12 @@ export default function App() {
             <ul>
               <li>
                 <Link to="/impressum" className="footer__link">
-                  Impressum
+                  <p className="footer__privacy">Impressum</p>
                 </Link>
               </li>
               <li>
                 <Link to="/privacydisclaimer" className="footer__link">
-                  Privacy + Disclaimer
+                  <p className="footer__privacy">Legal Terms</p>
                 </Link>
               </li>
             </ul>

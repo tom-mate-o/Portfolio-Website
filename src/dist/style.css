@@ -637,7 +637,7 @@ a:active {
   position: bottom;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 1.25rem;
+  gap: 1.25rem 0.625rem;
 }
 @media (min-width: 43.75em) {
   .footer {
@@ -686,6 +686,7 @@ a:active {
 }
 .footer__collumn1 p {
   font-size: 0.625rem;
+  white-space: nowrap;
 }
 .footer__logo {
   width: 4.375rem;
@@ -722,6 +723,10 @@ a:active {
     grid-column: 4/5;
     grid-row: 1/2;
   }
+}
+.footer__privacy {
+  font-size: 0.625rem;
+  white-space: nowrap;
 }
 
 .singlepage__contentContainer {

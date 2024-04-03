@@ -15,7 +15,7 @@
   position: bottom;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: u.rem(20);
+  gap: u.rem(20) u.rem(10);
 
   @include u.breakpoint('medium') {
     grid-template-columns: repeat(4, auto);
@@ -69,6 +69,7 @@
     grid-row: 1/4;
     p {
       font-size: u.rem(10);
+      white-space: nowrap;
     }
 
     @include u.breakpoint(medium) {
@@ -115,5 +116,10 @@
       grid-column: 4/5;
       grid-row: 1/2;
     }
+  }
+
+  &__privacy {
+    font-size: u.rem(10);
+    white-space: nowrap;
   }
 }
