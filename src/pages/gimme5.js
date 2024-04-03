@@ -1,10 +1,11 @@
 import React from 'react';
 import { useEffect, useState } from 'react';
-import threelittlebirbsbig from '../img/home_item_images/threelittlebirbs_big.jpg';
+import gimme5big from '../img/home_item_images/gimme5_big.jpg';
 import ImageGallery from 'react-image-gallery';
 import { ReactComponent as GitHubLink } from '../img/github.svg';
 import { ReactComponent as WebsiteLink } from '../img/eye-regular.svg';
 import { MdOutlineTouchApp } from 'react-icons/md';
+
 import { projectdata } from '../app/data/projectdata';
 import { Link } from 'react-router-dom';
 
@@ -18,7 +19,7 @@ export default function About() {
   const [isGalleryActive, setIsGalleryActive] = useState(false);
 
   const project = projectdata.find(
-    (project) => project.name === '3LB - Messaging App'
+    (project) => project.name === 'Gimme 5 - Social App'
   );
 
   const [isWide, setIsWide] = useState({ [project.id]: true });
@@ -42,29 +43,30 @@ export default function About() {
         <div
           className="singlepage__headerImage"
           style={{
-            backgroundImage: `linear-gradient(rgba(96, 92, 78, 0.5), rgba(96, 92, 78, 0.5)), url(${threelittlebirbsbig})`,
+            backgroundImage: `linear-gradient(rgba(96, 92, 78, 0.5), rgba(96, 92, 78, 0.5)), url(${gimme5big})`,
           }}
         >
-          <h1 className="singlepage__headerTitle">
-            3 little Birbs - Messaging App
-          </h1>
+          <h1 className="singlepage__headerTitle">Gimme 5 - Social App</h1>
         </div>
         <div className="singlepage__content">
           <p className="about__text">
-            "3 Little Birbs" was my final project for my Full Stack class at
-            codingschule.de. It is built as a full-stack, single-page web
-            application. The idea was to build a wholesome social media app
-            where you can write down three good things that happened to you
-            today and send them, guided by a postpigeon, to one of your friends
-            or out into the wild to a stranger.
+            "Gimme5" was a social media app project for Codingschule.de. I built
+            it together with my colleague Kathrin as a full-stack, single-page
+            web application. The idea was to build a platform where you can
+            share your five favourite things with the world. This could be
+            anything. From "The Top 5 80s musicians" to even "The Top 5 sorts of
+            Pizza". The app has a login and registration system, a feed where
+            you can see all the posts of the users you follow, a profile page
+            where you can see all your own posts and edit your profile, and a
+            like and comment system.
           </p>
 
           <p className="about__text">
-            3LB is built in React with Node.js. It uses MongoDB to store, get,
-            edit, and delete the data. The backend and the serverside renderings
-            are done with Express.js. The frontend is styled with CSS within
-            Styled Components, and the design is based on a Figma prototype I
-            did.
+            Gimme 5 is built in React with Node.js. It uses MongoDB to store,
+            get, edit, and delete the data. The backend and the serverside
+            renderings are done with Express.js. The frontend is styled with CSS
+            within Styled Components, and the design is based on a Figma
+            prototype that Kathrin did, including the Logo.
           </p>
 
           <h3 className="singlepage__dividerSubHeadline">Features</h3>
@@ -72,19 +74,17 @@ export default function About() {
             <li>Register</li>
             <li>Login</li>
             <li>Password Reset with E-Mail</li>
-            <li>Add friends via Friendcode</li>
-            <li>View your friends</li>
-            <li>Delete your friends</li>
-            <li>Select 3 Birds, add a kind message</li>
-            <li>Send your Birbs to a friend of your choice</li>
-            <li>Send your Birbs to a stranger</li>
-            <li>Receive Birbs from friends or strangers</li>
-            <li>View all your Birbs in a Calendar Archive</li>
-            <li>Get notifications</li>
+            <li>Add friends</li>
+            <li>A profile</li>
+            <li>View your posts on your profile</li>
+            <li>Post your own Top 5 list</li>
+            <li>Delete your own Top 5 list</li>
+            <li>Like other lists</li>
+            <li>Comment on other lists</li>
+            <li>Delete your own comment</li>
             <li>Upload a profile picture</li>
             <li>Change your username</li>
             <li>Change your password</li>
-            <li>Change the color-theme of the App</li>
           </ul>
 
           <div>

@@ -17,6 +17,7 @@ import Contact from './pages/contact';
 import Impressum from './pages/impressum';
 import Privacydisclaimer from './pages/privacydisclaimer';
 import Detail3littlebirbs from './pages/3littlebirbs';
+import Detailgimme5 from './pages/gimme5';
 
 import { ReactComponent as Mastdodon } from './img/mastodon.svg';
 import { ReactComponent as GitHub } from './img/github.svg';
@@ -167,6 +168,7 @@ export default function App() {
           <Route path="/impressum" element={<Impressum />} />
           <Route path="/privacydisclaimer" element={<Privacydisclaimer />} />
           <Route path="/3littlebirbs" element={<Detail3littlebirbs />} />
+          <Route path="/gimme5" element={<Detailgimme5 />} />
         </Routes>
         <footer className="footer">
           <div className="footer__collumn1">

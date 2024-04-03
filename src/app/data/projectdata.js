@@ -45,7 +45,7 @@ export const projectdata = [
       'Node',
       'CSS',
     ],
-    text: '"3 Little Birbs" was my final project for my Full Stack class at codingschule.de. It is built as a Full Stack Single Page Web Application. The idea was to build a wholesome Social Media App, where you can write down 3 good things that happened to you today, and send them to your friends or out into the wild, to a stranger.',
+    text: '"3 Little Birbs" was my final project for my Full Stack class at codingschule.de. It is built as a full-stack, single-page web application. The idea was to build a wholesome social media app where you can write down three good things that happened to you today and send them, guided by a postpigeon, to one of your friends or out into the wild to a stranger.',
     images: [
       {
         original: img3lb1,
@@ -75,7 +75,7 @@ export const projectdata = [
 
     name: 'Miriam Sterl',
     tags: ['All', 'Website', 'React', 'JavaScript', 'Node', 'SASS', 'CSS'],
-    text: 'A personal Website for the resercher and oceanographer Miriam Sterl. The Website is built with Docusaurus/React and Node.js. The design was created in Figma and the layout was built with SASS. The Website is fully responsive and also has a Blog-Section, where Miriam can post her latest research and findings using Markdown.',
+    text: 'A personal website for the researcher and oceanographer Miriam Sterl. The website is built with Docusaurus, React, and Node.js. The design was created in Figma, and the layout was built with SASS. The website is fully responsive and also has a blog section where Miriam can post her latest research and findings using Markdown.',
     images: [
       {
         original: imgmiriamsterl1,
@@ -123,7 +123,7 @@ export const projectdata = [
         original: imggimme5_6,
       },
     ],
-    linkto: '',
+    linkto: '/gimme5',
     github: 'https://github.com/tom-mate-o/Social-App-Gimme5',
     demo: '',
   },
@@ -132,7 +132,7 @@ export const projectdata = [
 
     name: 'Tom Kra',
     tags: ['All', 'Website', 'React', 'JavaScript', 'Node', 'SASS', 'CSS'],
-    text: 'My very own portfolio Website. It is built as an React-Single-Page-Application. The design was created in Figma and the layout was built with SASS. The Website is fully responsive.',
+    text: 'My very own portfolio website It is built as a React-Single-Page-Application. The design was created in Figma, and the layout was built with SASS. The website is fully responsive.',
     images: [
       {
         original: imgtomkra1,
@@ -169,7 +169,7 @@ export const projectdata = [
 
     name: 'Radio-OnAir-Quiz',
     tags: ['All', 'Web-App', 'React', 'JavaScript', 'Node', 'SASS', 'CSS'],
-    text: 'A Live On-Air Quiz Interface for the Morning Show "Opstaan met Daan" on Radio Texel. The Host can easily navigate through the rounds and questions. He can see the correct answer and trigger a live Soundeffect if the answer was correct or wrong. The Host can also see the current score of the contestant. The App is built with React and Node.js. The the layout was built with SASS.',
+    text: 'A Live On-Air Quiz Interface for the Morning Show "Opstaan met Daan" on Radio Texel. The host can easily navigate through the rounds and questions. He can see the correct answer and trigger a live sound effect if the answer is correct or wrong. The host can also see the current score of the contestant. The app is built with React and Node.js. The layout was built with SASS.',
     images: [
       {
         original: radioquiz1,
@@ -212,7 +212,7 @@ export const projectdata = [
 
     name: 'Lucia Kranawetter',
     tags: ['All', 'Website', 'React', 'JavaScript', 'Node', 'CSS'],
-    text: 'A personal Website for researcher and Ocean-Scientist Lucia Kranawetter. The Website is built in React, using Locomotive Scroll. The Website is fully responsive.',
+    text: 'A personal website for researcher and ocean scientist Lucia Kranawetter. The website is built in React, using Locomotive Scroll. The website is fully responsive.',
     images: [
       {
         original: imglucykra1,
@@ -236,7 +236,7 @@ export const projectdata = [
 
     name: 'Planet Facts',
     tags: ['All', 'Website', 'React', 'JavaScript', 'Node', 'CSS'],
-    text: 'That was a Frontend Mentor challenge that I participated in. The task was to implement a Figma design sheet into code. I chose React and turned the page into a Single Page Application. I styled the components using Styled Components and CSS. The texts and images are loaded on demand from separate JavaScript files.',
+    text: 'That was a frontend mentor challenge that I participated in. The task was to implement a Figma design sheet into code. I chose React and turned the page into a single-page application. I styled the components using Styled Components and CSS. The texts and images are loaded on demand from separate JSON files.',
     images: [
       {
         original: imgplanetfacts1,
