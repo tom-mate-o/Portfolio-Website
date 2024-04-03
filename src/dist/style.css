@@ -724,9 +724,11 @@ a:active {
     grid-row: 1/2;
   }
 }
-.footer__privacy {
-  font-size: 0.625rem;
-  white-space: nowrap;
+@media (max-width: 43.74875em) {
+  .footer__privacy {
+    font-size: 0.625rem;
+    white-space: nowrap;
+  }
 }
 
 .singlepage__contentContainer {

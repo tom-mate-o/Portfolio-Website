@@ -119,7 +119,9 @@
   }
 
   &__privacy {
-    font-size: u.rem(10);
-    white-space: nowrap;
+    @include u.breakpoint-down('small') {
+      font-size: u.rem(10);
+      white-space: nowrap;
+    }
   }
 }
