@@ -103,8 +103,9 @@ export default function About() {
             new. Since I’ve learned a “proper job” now, I seized the opportunity
             to completely switch fields, through educational leave within a
             year, pursuing my passion, which I had since my teenage years. Thus,
-            I started my journey to become a Junior Full Stack Developer through
-            various courses.
+            I started my journey to become a Full Stack Developer through
+            various courses. With focus on the M.E.R.N. stack and responsive
+            design.
           </p>
 
           <p className="about__text">
