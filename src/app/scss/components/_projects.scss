@@ -175,6 +175,10 @@
       .Web-App {
         background-color: var(--web-app-color);
       }
+
+      .API {
+        background-color: var(--api-color);
+      }
     }
 
     @include u.breakpoint('medium') {

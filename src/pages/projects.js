@@ -68,6 +68,7 @@ export default function Projects() {
                 'Mongo-DB',
                 'Express',
                 'Node',
+                'API',
                 'SASS',
                 'JavaScript',
                 'CSS',

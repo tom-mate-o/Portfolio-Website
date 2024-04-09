@@ -29,8 +29,49 @@ import imgplanetfacts3 from '../../img/projects_images/planetfacts/pf3.jpeg';
 import xdream from '../../img/projects_images/xdream/xdream.jpeg';
 import radioquiz1 from '../../img/projects_images/radioquiz/radioquiz1.jpeg';
 import radioquiz2 from '../../img/projects_images/radioquiz/radioquiz2.jpeg';
+import waveswindwetweather1 from '../../img/projects_images/waveswindwetweather/waveswindwetweather1.jpeg';
+import waveswindwetweather2 from '../../img/projects_images/waveswindwetweather/waveswindwetweather2.jpeg';
+import waveswindwetweather3 from '../../img/projects_images/waveswindwetweather/waveswindwetweather3.jpeg';
+import waveswindwetweather4 from '../../img/projects_images/waveswindwetweather/waveswindwetweather4.jpeg';
+import waveswindwetweather5 from '../../img/projects_images/waveswindwetweather/waveswindwetweather5.jpeg';
 
 export const projectdata = [
+  {
+    id: 11,
+
+    name: 'API Project Meteo Data',
+    tags: [
+      'All',
+      'Web-App',
+      'React',
+      'JavaScript',
+      'API',
+      'Node',
+      'SASS',
+      'CSS',
+    ],
+    text: '"API Project, created in React, that fetches meteorology data from Open-Meteo and presents it in dynamic line- and barcharts together with highlighted measurement values. The user interface was designed in Figma and coded with SASS. It is fully responsive. On desktop view, the user can toggle a wider view of the charts to get better insight.',
+    images: [
+      {
+        original: waveswindwetweather1,
+      },
+      {
+        original: waveswindwetweather2,
+      },
+      {
+        original: waveswindwetweather3,
+      },
+      {
+        original: waveswindwetweather4,
+      },
+      {
+        original: waveswindwetweather5,
+      },
+    ],
+    linkto: '',
+    github: 'https://github.com/tom-mate-o/API-Project-waves-wind-wet-weather',
+    demo: 'https://waves-wind-wet-weather.netlify.app/',
+  },
   {
     id: 1,
 
@@ -132,7 +173,7 @@ export const projectdata = [
 
     name: 'Tom Kra',
     tags: ['All', 'Website', 'React', 'JavaScript', 'Node', 'SASS', 'CSS'],
-    text: 'My very own portfolio website It is built as a React-Single-Page-Application. The design was created in Figma, and the layout was built with SASS. The website is fully responsive.',
+    text: 'My very own portfolio website. It is built as a React-Single-Page-Application. The design was created in Figma, and the layout was built with SASS. The website is fully responsive.',
     images: [
       {
         original: imgtomkra1,
@@ -256,7 +297,7 @@ export const projectdata = [
     id: 6,
 
     name: 'Pokedex',
-    tags: ['All', 'Web-App', 'JavaScript', 'CSS'],
+    tags: ['All', 'Web-App', 'API', 'JavaScript', 'CSS'],
     text: 'A Pokédex that I built using the PokéAPI. You can send a request to the API via the input field, in this case the Pokédex number, and the API returns the name of the Pokémon, an image, a short description, and the type and displays them.',
 
     images: [
