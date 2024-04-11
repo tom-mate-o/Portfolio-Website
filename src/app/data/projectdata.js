@@ -33,7 +33,7 @@ import waveswindwetweather1 from '../../img/projects_images/waveswindwetweather/
 import waveswindwetweather2 from '../../img/projects_images/waveswindwetweather/waveswindwetweather2.jpeg';
 import waveswindwetweather3 from '../../img/projects_images/waveswindwetweather/waveswindwetweather3.jpeg';
 import waveswindwetweather4 from '../../img/projects_images/waveswindwetweather/waveswindwetweather4.jpeg';
-import waveswindwetweather5 from '../../img/projects_images/waveswindwetweather/waveswindwetweather5.jpeg';
+import bezigbij from '../../img/projects_images/bezigbij/bezigbij.jpeg';
 
 export const projectdata = [
   {
@@ -63,9 +63,6 @@ export const projectdata = [
       },
       {
         original: waveswindwetweather4,
-      },
-      {
-        original: waveswindwetweather5,
       },
     ],
     linkto: '',
@@ -190,11 +187,46 @@ export const projectdata = [
     demo: 'https://tomkra.dev/',
   },
   {
+    id: 12,
+
+    name: 'Bezig Bij',
+    tags: [
+      'All',
+      'Website',
+      'React',
+      'Express',
+      'API',
+      'JavaScript',
+      'Node',
+      'SASS',
+      'CSS',
+    ],
+    text: 'Website for the emotional reflection and mindfulness company "Bezig Bij". The site is currently under development and will have its own CMS system so that the owners can easily change texts themselves. I am building the site in React, the design was created with Figma and coded with SASS. Because of the CMS, the website also has an express backend that accesses the data via an API. (Hores Picture by Freepik.com)',
+    images: [
+      {
+        original: bezigbij,
+      },
+    ],
+    linkto: '',
+    github: '',
+    demo: '',
+  },
+  {
     id: 9,
 
     name: 'X-Dream-Fit',
-    tags: ['All', 'Website', 'React', 'JavaScript', 'Node', 'SASS', 'CSS'],
-    text: 'Website for Fitness-, Pilates Coach, and Freediving Instructor Susi Roth. The site is currently under development and aims to provide an overview of her entire range of services. For the CMS, I used Front-Aid so that Susi can easily edit the content herself. In the future, there will be a member area with personalised training plans. The website is built with React and Node.js. The design was created in Figma, and the layout was built with SASS.',
+    tags: [
+      'All',
+      'Website',
+      'React',
+      'Express',
+      'API',
+      'JavaScript',
+      'Node',
+      'SASS',
+      'CSS',
+    ],
+    text: 'Website for Fitness-, Pilates Coach, and Freediving Instructor Susi Roth. The site is currently under development and aims to provide an overview of her entire range of services. It will have its own CMS system so that Susi can easily change texts herself In the future. There will be a member area with personalised training plans. The website is built with React and Node.js. The design was created in Figma, and the layout was built with SASS. An Express backend accesses the CMS-data via an API.',
     images: [
       {
         original: xdream,
