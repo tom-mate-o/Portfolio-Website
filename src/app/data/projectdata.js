@@ -34,8 +34,53 @@ import waveswindwetweather2 from '../../img/projects_images/waveswindwetweather/
 import waveswindwetweather3 from '../../img/projects_images/waveswindwetweather/waveswindwetweather3.jpeg';
 import waveswindwetweather4 from '../../img/projects_images/waveswindwetweather/waveswindwetweather4.jpeg';
 import bezigbij from '../../img/projects_images/bezigbij/bezigbij.jpeg';
+import twelve1 from '../../img/projects_images/twelvepoints/twelve1.jpeg';
+import twelve2 from '../../img/projects_images/twelvepoints/twelve2.jpeg';
+import twelve3 from '../../img/projects_images/twelvepoints/twelve3.jpeg';
+import twelve4 from '../../img/projects_images/twelvepoints/twelve4.jpeg';
+import twelve5 from '../../img/projects_images/twelvepoints/twelve5.jpeg';
+import twelve6 from '../../img/projects_images/twelvepoints/twelve6.jpeg';
 
 export const projectdata = [
+  {
+    id: 12,
+
+    name: 'Twelve Points',
+    tags: [
+      'All',
+      'Web-App',
+      'React',
+      'JavaScript',
+      'Mongo-DB',
+      'Express',
+      'Node',
+      'CSS',
+    ],
+    text: 'Full-Stack Voting and Tip Web-App for the Eurovision Song Contest Final 2024. The user can vote for his favourite song and predict the ranking for the final, and you can see the votes of your friends. The app has a login and registration system. It is built with React, Node.js, Express, and MongoDB. Layout in Figma, styling with SASS.',
+    images: [
+      {
+        original: twelve1,
+      },
+      {
+        original: twelve2,
+      },
+      {
+        original: twelve3,
+      },
+      {
+        original: twelve4,
+      },
+      {
+        original: twelve5,
+      },
+      {
+        original: twelve6,
+      },
+    ],
+    linkto: '',
+    github: 'https://github.com/tom-mate-o/12points',
+    demo: '',
+  },
   {
     id: 11,
 
