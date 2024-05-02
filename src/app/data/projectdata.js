@@ -43,7 +43,7 @@ import twelve6 from '../../img/projects_images/twelvepoints/twelve6.jpeg';
 
 export const projectdata = [
   {
-    id: 12,
+    id: 13,
 
     name: 'Twelve Points',
     tags: [
