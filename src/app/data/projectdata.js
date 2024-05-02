@@ -55,6 +55,7 @@ export const projectdata = [
       'Express',
       'Node',
       'CSS',
+      'SASS',
     ],
     text: 'Full-Stack Voting and Tip Web-App for the Eurovision Song Contest Final 2024. The user can vote for his favourite song, predict the ranking for the final and get points for correct rankings. One can also see the votes and bets of friends. The app has a login-, registration- and rest-password-function. It is built with React, Node.js, Express, and MongoDB. Layout in Figma, styling with SASS.',
     images: [
