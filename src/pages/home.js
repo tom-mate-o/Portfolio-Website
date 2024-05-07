@@ -87,7 +87,7 @@ export default function Home() {
             src={xdreamfitavatar}
             alt="Tom Kra"
             width={230}
-            height={314}
+            height={315}
           />
         </div>
       </div>
