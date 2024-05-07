@@ -56,7 +56,7 @@ export default function App() {
             </Link>
           </div>
           <div className="topnav__rightcolumn">
-            <h1 className="topnav__title">Tom Kra</h1>
+            <h1 className="topnav__title">X-DREAM-FIT</h1>
             <nav>
               <ul className="topnav__links">
                 <Hamburger
@@ -175,7 +175,7 @@ export default function App() {
             <Link to="/" className="topnav__homelink hover-fade">
               <Logo className="footer__logo" />
             </Link>
-            <p>©2024 Tom Kra</p>
+            <p>©2024 X-DREAM-FIT-COACHING</p>
           </div>
           <div className="footer__collumn2">
             <ul>

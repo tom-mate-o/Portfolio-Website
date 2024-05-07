@@ -36,7 +36,7 @@
   }
 
   &__title {
-    color: var(--dark-color-opacity);
+    color: var(--navbar-color-bg);
     font-size: u.rem(35);
     font-weight: 700;
     line-height: 0.7;
@@ -53,7 +53,7 @@
     display: flex;
     align-items: center;
 
-    background-color: var(--dark-color-opacity);
+    background-color: var(--navbar-color-bg);
     width: auto;
     height: u.rem(36);
 
