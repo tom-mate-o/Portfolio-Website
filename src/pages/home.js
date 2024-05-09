@@ -26,6 +26,7 @@ export default function Home() {
     'drink coffee.',
     'manage Data with Mongoose.',
   ];
+  //
 
   const [index, setIndex] = useState(0);
   const [subIndex, setSubIndex] = useState(0);
