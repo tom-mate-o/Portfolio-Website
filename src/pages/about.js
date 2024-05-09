@@ -46,7 +46,7 @@ export default function About() {
                   </tr>
                   <tr>
                     <td>Languages</td>
-                    <td>German (native), English (C1), Dutch (B1)*</td>
+                    <td>German (native), English (C1), Dutch (B1)</td>
                   </tr>
                 </tbody>
               </table>
@@ -132,7 +132,6 @@ export default function About() {
               </div>
             ))}
           </div>
-          <p className="about__footnote">*almost 😛</p>
         </div>
       </div>
     </div>
