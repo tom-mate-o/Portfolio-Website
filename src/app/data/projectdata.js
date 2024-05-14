@@ -260,7 +260,7 @@ export const projectdata = [
       },
     ],
     linkto: '',
-    github: 'https://github.com/tom-mate-o/X-Dream-Fit-Website',
+    github: 'https://github.com/tom-mate-o/xdreamfit_react',
     demo: 'https://xdreamfit.net/',
   },
   {
