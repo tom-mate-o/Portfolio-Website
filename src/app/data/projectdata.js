@@ -26,7 +26,11 @@ import imgpokedex3 from '../../img/projects_images/pokedex/pokedex3.jpeg';
 import imgplanetfacts1 from '../../img/projects_images/planetfacts/pf1.jpeg';
 import imgplanetfacts2 from '../../img/projects_images/planetfacts/pf2.jpeg';
 import imgplanetfacts3 from '../../img/projects_images/planetfacts/pf3.jpeg';
-import xdream from '../../img/projects_images/xdream/xdream.jpeg';
+import xdream1 from '../../img/projects_images/xdream/xdream1.jpeg';
+import xdream2 from '../../img/projects_images/xdream/xdream2.jpeg';
+import xdream3 from '../../img/projects_images/xdream/xdream3.jpeg';
+import xdream4 from '../../img/projects_images/xdream/xdream4.jpeg';
+import xdream5 from '../../img/projects_images/xdream/xdream5.jpeg';
 import radioquiz1 from '../../img/projects_images/radioquiz/radioquiz1.jpeg';
 import radioquiz2 from '../../img/projects_images/radioquiz/radioquiz2.jpeg';
 import waveswindwetweather1 from '../../img/projects_images/waveswindwetweather/waveswindwetweather1.jpeg';
@@ -233,21 +237,38 @@ export const projectdata = [
     demo: 'https://tomkra.dev/',
   },
   {
+    id: 9,
+
+    name: 'X-Dream-Fit',
+    tags: ['All', 'Website', 'React', 'JavaScript', 'Node', 'SASS', 'CSS'],
+    text: 'Website for Fitness-, Pilates Coach, and Freediving Instructor Susi Roth. It gives a nice overview of all her services. The website is built with React and Node.js. The design was created in Figma, and the layout was built with SASS.',
+    images: [
+      {
+        original: xdream1,
+      },
+      {
+        original: xdream2,
+      },
+      {
+        original: xdream3,
+      },
+      {
+        original: xdream4,
+      },
+      {
+        original: xdream5,
+      },
+    ],
+    linkto: 'https://xdreamfit.net/',
+    github: 'https://github.com/tom-mate-o/X-Dream-Fit-Website',
+    demo: '',
+  },
+  {
     id: 12,
 
     name: 'Bezig Bij',
-    tags: [
-      'All',
-      'Website',
-      'React',
-      'Express',
-      'API',
-      'JavaScript',
-      'Node',
-      'SASS',
-      'CSS',
-    ],
-    text: 'Website for the emotional reflection and mindfulness company "Bezig Bij". The site is currently under development and will have its own CMS system so that the owners can easily change texts themselves. I am building the site in React, the design was created with Figma and coded with SASS. Because of the CMS, the website also has an express backend that accesses the data via an API. (Hores Picture by Freepik.com)',
+    tags: ['All', 'Website', 'React', 'JavaScript', 'Node', 'SASS', 'CSS'],
+    text: 'Website for the emotional reflection and mindfulness company "Bezig Bij". The site is currently under development and will have a calendar/schedule system so that the owners can easily change events themselves. I am building the site in React, the design was created with Figma and coded with SASS. (Horse Picture by Freepik.com)',
     images: [
       {
         original: bezigbij,
@@ -255,31 +276,6 @@ export const projectdata = [
     ],
     linkto: '',
     github: '',
-    demo: '',
-  },
-  {
-    id: 9,
-
-    name: 'X-Dream-Fit',
-    tags: [
-      'All',
-      'Website',
-      'React',
-      'Express',
-      'API',
-      'JavaScript',
-      'Node',
-      'SASS',
-      'CSS',
-    ],
-    text: 'Website for Fitness-, Pilates Coach, and Freediving Instructor Susi Roth. The site is currently under development and aims to provide an overview of her entire range of services. It will have its own CMS system so that Susi can easily change texts herself In the future. There will be a member area with personalised training plans. The website is built with React and Node.js. The design was created in Figma, and the layout was built with SASS. An Express backend accesses the CMS-data via an API.',
-    images: [
-      {
-        original: xdream,
-      },
-    ],
-    linkto: '',
-    github: 'https://github.com/tom-mate-o/X-Dream-Fit-Website',
     demo: '',
   },
 
