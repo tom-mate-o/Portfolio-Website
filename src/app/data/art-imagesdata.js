@@ -47,7 +47,7 @@ import tomkra_art044 from '../../img/art_images/tomkra_art044.jpg';
 import tomkra_art045 from '../../img/art_images/tomkra_art045.jpg';
 
 import tomkra_art047 from '../../img/art_images/tomkra_art047.JPG';
-import tomkra_art048 from '../../img/art_images/tomkra_art048.jpg';
+import tomkra_art048 from '../../img/art_images/tomkra_art048.JPG';
 
 export const images = [
   {
