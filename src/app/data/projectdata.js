@@ -259,9 +259,9 @@ export const projectdata = [
         original: xdream5,
       },
     ],
-    linkto: 'https://xdreamfit.net/',
+    linkto: '',
     github: 'https://github.com/tom-mate-o/X-Dream-Fit-Website',
-    demo: '',
+    demo: 'https://xdreamfit.net/',
   },
   {
     id: 12,
