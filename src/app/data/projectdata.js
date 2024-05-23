@@ -38,6 +38,11 @@ import waveswindwetweather2 from '../../img/projects_images/waveswindwetweather/
 import waveswindwetweather3 from '../../img/projects_images/waveswindwetweather/waveswindwetweather3.jpeg';
 import waveswindwetweather4 from '../../img/projects_images/waveswindwetweather/waveswindwetweather4.jpeg';
 import bezigbij from '../../img/projects_images/bezigbij/bezigbij.jpeg';
+import bezigbij1 from '../../img/projects_images/bezigbij/bezigbij1.jpeg';
+import bezigbij2 from '../../img/projects_images/bezigbij/bezigbij2.jpeg';
+import bezigbij3 from '../../img/projects_images/bezigbij/bezigbij3.jpeg';
+import bezigbij4 from '../../img/projects_images/bezigbij/bezigbij4.jpeg';
+import bezigbij5 from '../../img/projects_images/bezigbij/bezigbij5.jpeg';
 import twelve1 from '../../img/projects_images/twelvepoints/twelve1.jpeg';
 import twelve2 from '../../img/projects_images/twelvepoints/twelve2.jpeg';
 import twelve3 from '../../img/projects_images/twelvepoints/twelve3.jpeg';
@@ -266,17 +271,38 @@ export const projectdata = [
   {
     id: 12,
 
-    name: 'Bezig Bij',
-    tags: ['All', 'Website', 'React', 'JavaScript', 'Node', 'SASS', 'CSS'],
-    text: 'Website for the emotional reflection and mindfulness company "Bezig Bij". The site is currently under development and will have a calendar/schedule system so that the owners can easily change events themselves. I am building the site in React, the design was created with Figma and coded with SASS. (Horse Picture by Freepik.com)',
+    name: 'Magic & Nonsense',
+    tags: [
+      'All',
+      'Website',
+      'React',
+      'JavaScript',
+      'Node',
+      'SASS',
+      'CSS',
+      'API',
+    ],
+    text: 'Website for the emotional reflection and mindfulness company "Magic & Nonsense". The site has a Google API calendar/schedule system so that the owners can easily change events themselves. I built the site in React, the design was created in Figma and coded with SASS. (Horse Picture by Freepik.com)',
     images: [
       {
-        original: bezigbij,
+        original: bezigbij1,
+      },
+      {
+        original: bezigbij2,
+      },
+      {
+        original: bezigbij3,
+      },
+      {
+        original: bezigbij4,
+      },
+      {
+        original: bezigbij5,
       },
     ],
     linkto: '',
-    github: '',
-    demo: '',
+    github: 'https://github.com/tom-mate-o/Bezig_Bij_react',
+    demo: 'https://magic-nonsense.netlify.app/',
   },
 
   {
