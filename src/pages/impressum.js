@@ -36,10 +36,6 @@ export default function Impressum() {
               <br />
             </p>
             <p>
-              <b>Anschrift:</b> <br />
-              Margarete Schütte-Lihotzky 61, 8605 Kapfenberg
-              <br />
-              <br />
               <b>Kontaktdaten:</b> <br /> Email: mail@tomkra.dev <br />
             </p>
             <br />
